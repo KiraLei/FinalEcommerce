@@ -1,5 +1,6 @@
 <template>
   <div class="view-home">
+    <h2>PAGINA HOME</h2>
     <CardCourse />
   </div>
 </template>

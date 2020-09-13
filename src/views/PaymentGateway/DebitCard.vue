@@ -1,12 +1,12 @@
 <template>
-  <div class="auth-login">
-    <h2>PAGINA LOGIN</h2>
+  <div class="view-debit-card">
+      <h2>VISTA DEBIT CARD</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AuthLogin",
+  name: "DebitCard",
 };
 </script>
 

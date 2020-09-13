@@ -1,12 +1,12 @@
 <template>
-  <div class="auth-login">
-    <h2>PAGINA LOGIN</h2>
+  <div class="view-summary">
+    <h2>VISTA SUMMARY PAGO</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AuthLogin",
+  name: "PaymentSummary",
 };
 </script>
 
