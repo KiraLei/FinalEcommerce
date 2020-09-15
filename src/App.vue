@@ -37,6 +37,8 @@ export default {
   name: "App",
 };
 </script>
-<style lang="scss" scoped>
-/* @import '@/assets/styles/general.scss'*/
+<style lang="scss">
+
+@import "./assets/styles/main.scss";
+
 </style>
