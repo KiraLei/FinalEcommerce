@@ -1,16 +1,31 @@
 <template>
   <div class="view-home">
-    <h2>PAGINA HOME</h2>
+    <h2>PAGINA HOME xxxxxxxxxxxxx</h2>
+    <InputNormalComponent></InputNormalComponent>
+      <InputPasswordComponent></InputPasswordComponent>
+       <InputComponent></InputComponent>
+       <CardComponent></CardComponent>
+       
     <CardCourse />
   </div>
 </template>
 
 <script>
 import CardCourse from "./components/CardCourse";
+import CardComponent from "../../ui/Card"; 
+import InputComponent from "../../ui/Input";
+import InputNormalComponent from "../../ui/InputNormal";
+import InputPasswordComponent from "../../ui/InputPassword";
+ 
+
 export default {
   name: "Home",
   components: {
     CardCourse,
+    InputNormalComponent,
+    InputPasswordComponent,
+    InputComponent,
+    CardComponent
   },
   data() {
     return {
@@ -39,5 +54,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
