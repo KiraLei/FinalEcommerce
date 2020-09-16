@@ -1,10 +1,7 @@
 @import "globals";
+@import "reset";
 
 
 body{
   background : $primary-color ;
-}
-a{
-  color: $secondary-color;
-  background: $tertiary-color;
-}
+} 
