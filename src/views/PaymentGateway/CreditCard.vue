@@ -21,12 +21,15 @@
           <input type="text" placeholder="Correo electrónico" />
         </div>
         <div class="box-inputs">
-          <input type="text" placeholder="Mes" />
-          <input type="text" placeholder="Año" />
-          <input type="text" placeholder="cvc/cvv" />
+          <div class="container-tres">
+            <input type="text" placeholder="Mes" />
+            <input type="text" placeholder="Año" />
+            <input type="text" placeholder="cvc/cvv" />
+          </div>
+          <div></div>
         </div>
         <p>Nº de cuotas</p>
-        <div class="box-inputs">
+        <div class="box-inputs-dues">
           <button>01</button>
           <button>02</button>
           <button>03</button>
@@ -62,42 +65,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.wrapper {
-  width: 1200px;
-  padding: 5px;
-  background: #fff;
-  margin: auto;
-  display: flex;
-  .box-runway {
-    width: 100%;
-    h2 {
-      font-size: 1.25rem;
-    }
-    p {
-      font-size: 1rem;
-      font-weight: bold;
-    }
-    .box-tabs{
-      display: flex;
-      button{
-        background: #EFEFEF;
-        color: #555555;
-        border: none;
-        padding: 15px 55px;
-        font-size: 0.875rem;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.2s;
-        &:hover{
-          transition: 0.2s;
-          background: #5640ff;
-          color: #fff;
-        }
-      }
-    }
-  }
-  .box-list {
-    width: 433px;
-  }
-}
+
 </style>
