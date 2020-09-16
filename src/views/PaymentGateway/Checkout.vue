@@ -1,6 +1,9 @@
 <template>
   <div class="view-checkout">
-    <h2>VISTA CHECKOUT</h2>
+    
+    <div class="car">Carrito de compras</div>
+     
+
   </div>
 </template>
 

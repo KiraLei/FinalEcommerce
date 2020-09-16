@@ -1,10 +1,9 @@
 @import "globals";
+@import "typography";
 
 
-body{
-  background : $primary-color ;
-}
-a{
-  color: $secondary-color;
-  background: $tertiary-color;
+.roboto{
+  color: red;
+  font-family: $font-family;
+  font-size: 2rem;
 }
