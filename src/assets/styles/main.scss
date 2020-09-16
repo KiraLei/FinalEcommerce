@@ -1,7 +1,15 @@
 @import "globals";
 @import "reset";
-
+@import "typography";
 
 body{
   background : $primary-color ;
 } 
+
+
+
+.roboto{
+  color: red;
+  font-family: $font-family;
+  font-size: 2rem;
+}

@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <div class="roboto">Prueba roboto</div>
     <ul>
       <li>
         <router-link to="/auth/login">LOGIN</router-link>
