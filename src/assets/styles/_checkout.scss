@@ -17,11 +17,17 @@
   flex-direction: column;
   padding-top: 1rem;
 }
+.firt-section{
+    display: flex;
+    justify-content: space-between;
+
+}
 .amount {
   color: #222222 !important;
   font-size: 1.4rem !important;
   font-weight: 900 !important;
   padding-top: 1rem;
+  padding-left: 4rem;
 }
 
 .checkout {
@@ -47,6 +53,7 @@
 .pay-card {
   width: 100%;
   max-width: 433px;
+  height: 350px;
   background-color: #fff;
   padding: 3rem;
   display: flex;
