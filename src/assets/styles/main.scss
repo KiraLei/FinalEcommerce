@@ -1,8 +1,17 @@
 @import "globals";
+@import "reset";
 @import "typography";
+<<<<<<< HEAD
 @import "checkout";
 @import "creditcard";
 
+ 
+@import "view_home";
+
+body{
+  background : $primary-color ;
+} 
+ 
 
 
 
