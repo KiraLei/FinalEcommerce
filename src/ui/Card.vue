@@ -1,7 +1,9 @@
 <template>
-  <div href="" class="card-card">
+  <div href class="card-card">
     <h3>Desarrollo Front-End</h3>
-    <p><span>+</span> Ver más</p>
+    <p>
+      <span>+</span> Ver más
+    </p>
   </div>
 </template>
 
@@ -20,8 +22,9 @@ export default Vue.extend({
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
-  background-image: url(https://picsum.photos/200/300?random=1);
-
+  // background-image: url(@/assets/images/front_end.jpg);
+  background-color: blue;
+  background-repeat: no-repeat;
   background-position: center;
 }
 </style>

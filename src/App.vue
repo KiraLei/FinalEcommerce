@@ -1,7 +1,6 @@
 <template>
   <div class="app">
-    <div class="roboto">Prueba roboto</div>
-    <ul>
+    <ul class="nav">
       <li>
         <router-link to="/auth/login">LOGIN</router-link>
       </li>
@@ -39,9 +38,6 @@ export default {
 };
 </script>
 <style lang="scss">
-
 @import "./assets/styles/main.scss";
-@import'~bootstrap/dist/css/bootstrap.css';
-
-
+@import "~bootstrap/dist/css/bootstrap.css";
 </style>
