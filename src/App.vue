@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div class="app">
     <ul class="nav">
       <li>
@@ -31,7 +31,7 @@
     </ul>
     <router-view></router-view>
   </div>
-</template>
+</template> 
 <script>
 export default {
   name: "App",

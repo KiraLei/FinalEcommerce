@@ -1,5 +1,8 @@
 <template>
+
+
   <div class="view-home">
+  
     <div class="view-home-header">
       <div>
         <img
@@ -65,16 +68,22 @@
 
       <div></div>
     </div>
+
+
+   <ButtonWhatsappComponent/>
+   
   </div>
 </template>
 
 <script>
 import CardComponent from "../../../src/ui/Card.vue";
+ import ButtonWhatsappComponent from "../../../src/ui/ButtonWhatsapp.vue";
 
 export default {
   name: "Home",
   components: {
     CardComponent,
+   ButtonWhatsappComponent
   },
   data() {
     return {

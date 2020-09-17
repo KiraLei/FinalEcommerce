@@ -8,7 +8,7 @@
 
     .view-home-header-background {
       height: 350px;
-      width: 100vw;
+      width: 100%;      
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -49,9 +49,7 @@
     margin-bottom: 150px;
   }
 
-  .view-home-footer-section-2
-  {
+  .view-home-footer-section-2 {
     @include font-big-2;
-
   }
 }
