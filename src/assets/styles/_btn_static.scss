@@ -1,0 +1,14 @@
+.btn_static {
+  width: 100%;
+  background: #5640ff;
+  color: #fff;
+  border: none;
+  padding: 15px 55px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    background: #402cda;
+  }
+}
