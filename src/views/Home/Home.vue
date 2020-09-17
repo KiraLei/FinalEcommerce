@@ -4,7 +4,7 @@
       <div>
         <img
           class="view-home-header-background"
-          src="../../assets/images/banner2.png"
+          src="@/assets/images/banner2.png"
         />
 
         <div class="container">
@@ -16,6 +16,7 @@
               />
             </div>
           </div>
+
           <div class="row">
             <div class="offset-2 col-10">
               <p class="view-home-header-texto-1">
@@ -26,6 +27,7 @@
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -34,7 +36,7 @@
       <div class="row">
         <div class="col">
           <p class="view-home-body-texto-1">
-            Con nuestros programas de especialización
+            Conoce nuestros Programas de Especialización
           </p>
         </div>
       </div>
@@ -89,7 +91,7 @@ export default {
   },
   data() {
     return {
-      cards: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      cards: [1, 2, 3, 4, 5, 6, 7, 8],
     };
   },
 };

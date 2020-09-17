@@ -22,9 +22,9 @@ export default Vue.extend({
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
-  // background-image: url(@/assets/images/front_end.jpg);
-  background-color: blue;
+  background-image: url(~@/assets/images/front_end.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover ;
 }
 </style>

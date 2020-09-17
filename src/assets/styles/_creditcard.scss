@@ -1,3 +1,8 @@
+.view-credit-card {
+  width: 100vw;
+  height: 100vh;
+  background: #f8f8f8;
+}
 .wrapper {
   width: 1200px;
   padding: 5px;
@@ -91,13 +96,19 @@
   }
   .box-list {
     width: 433px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
     .add-item {
       display: flex;
+      margin: 10px 0;
       img {
         width: 130px;
         height: 100px;
         background: red;
-        border-radius: 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        object-fit: cover;
       }
       .box-text {
         h3 {
@@ -110,16 +121,10 @@
     }
   }
   .box-button {
-    // button {
-    //   width: 227px;
-    //   height: 50px;
-    //   background: $primary-color;
-    //   color: #fff;
-    //   border: none;
-    //   font-size: 0.875rem;
-    //   font-weight: bold;
-    //   border-radius: 5px;
-    // }
+    .center{
+      width: 227px;
+      text-align: center;
+    }
   }
 }
 .box-list {
