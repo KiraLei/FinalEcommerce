@@ -49,32 +49,43 @@
     <div class="view-home-footer">
       <div class="view-home-footer-section-1">
         <img src="../../assets/images/girl1.png" />
+
+        <div>
+          <p>Sé parte de la comunidad</p>
+          <span
+            >Programas virtuales para el desarrollo de habilidades de
+            programación a lo largo de todo el Stack tecnológico.          
+            Al finalizar sabrás cómo crear una página web y desarrollar la
+            lógica detrás del funcionamiento de una aplicación, así como formar
+            parte de una gran comunidad de desarrolladores.</span
+          >
+        </div>
       </div>
 
       <div class="container">
-        <div class=" row"> 
-
-  
-        <p class="texto-dark-blue-2">
-          Beneficios
-        </p>
+        <div class="row">
+          <p class="texto-dark-blue-2">
+            Beneficios
+          </p>
         </div>
-
-
       </div>
 
       <div></div>
     </div>
+
+    <ButtonWhatsappComponent />
   </div>
 </template>
 
 <script>
 import CardComponent from "../../../src/ui/Card.vue";
+import ButtonWhatsappComponent from "../../../src/ui/ButtonWhatsapp.vue";
 
 export default {
   name: "Home",
   components: {
     CardComponent,
+    ButtonWhatsappComponent,
   },
   data() {
     return {
