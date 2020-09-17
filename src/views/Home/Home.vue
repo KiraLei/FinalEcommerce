@@ -1,66 +1,84 @@
 <template>
   <div class="view-home">
+    <div class="view-home-header">
+      <div>
+        <img
+          class="view-home-header-background"
+          src="../../assets/images/banner2.png"
+        />
+
+        <div class="container">
+          <div class="row">
+            <div class="col-1">
+              <img
+                class="view-home-header-icono"
+                src="../../assets/images/iconoPachaqtec.png"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-2 col-10">
+              <p class="view-home-header-texto-1">
+                ¡Explota todo tu potencial tecnológico!
+              </p>
+              <p class="view-home-header-texto-2">
+                Con nuestros programas de especialización
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid container-md">
+      <div class="row">
+        <div class="col">
+          <p class="view-home-body-texto-1">
+            Con nuestros programas de especialización
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex flex-wrap justify-content-center">
+          <CardComponent class="m-2" v-for="obj in cards" v-bind:key="obj" />
+        </div>
+      </div>
+    </div>
+
+    <div class="view-home-footer">
+      <div class="view-home-footer-section-1">
+        <img src="../../assets/images/girl1.png" />
+      </div>
+
+      <div class="container">
+        <div class=" row"> 
+
+  
+        <p class="texto-dark-blue-2">
+          Beneficios
+        </p>
+        </div>
 
 
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
+      </div>
 
-    <h2>PAGINA HOME xxxxxxxxxxxxx</h2>
-    <InputNormalComponent></InputNormalComponent>
-      <InputPasswordComponent></InputPasswordComponent>
-       <InputComponent></InputComponent>
-       <CardComponent></CardComponent>
-       
-    <CardCourse />
+      <div></div>
+    </div>
   </div>
 </template>
 
 <script>
-import CardCourse from "./components/CardCourse";
-import CardComponent from "../../ui/Card"; 
-import InputComponent from "../../ui/Input";
-import InputNormalComponent from "../../ui/InputNormal";
-import InputPasswordComponent from "../../ui/InputPassword";
- 
+import CardComponent from "../../../src/ui/Card.vue";
 
 export default {
   name: "Home",
   components: {
-    CardCourse,
-    InputNormalComponent,
-    InputPasswordComponent,
-    InputComponent,
-    CardComponent
+    CardComponent,
   },
   data() {
     return {
-      courses: [
-        {
-          id: 1,
-          name: "Desarrollo Front-End",
-          description: "",
-          itsBuy: true,
-        },
-        {
-          id: 2,
-          name: "Desarrollo Front-End",
-          description: "",
-          itsBuy: true,
-        },
-        {
-          id: 3,
-          name: "Desarrollo Front-End",
-          description: "",
-          itsBuy: true,
-        },
-      ],
+      cards: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     };
   },
 };
