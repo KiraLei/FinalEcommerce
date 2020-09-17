@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header></Header>
     <div class="view-checkout checkout">
       <div >
         <div class="firt-section">
@@ -75,12 +74,8 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
 export default {
   name: "checkout",
-  components: {
-    Header,
-  },
 };
 </script>
 

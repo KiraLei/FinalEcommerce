@@ -1,5 +1,6 @@
  <template>
   <div class="app">
+    <Header></Header>
     <ul class="nav">
       <li>
         <router-link to="/auth/login">LOGIN</router-link>
@@ -33,8 +34,12 @@
   </div>
 </template> 
 <script>
+import Header from "@/components/Header.vue";
 export default {
   name: "App",
+  components: {
+    Header,
+  },
 };
 </script>
 <style lang="scss">

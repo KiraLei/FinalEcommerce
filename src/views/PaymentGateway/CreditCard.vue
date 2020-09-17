@@ -1,9 +1,9 @@
 <template>
   <div class="view-credit-card">
-    <h2>VISTA CREDIT CARD</h2>
     <div class="wrapper">
       <div class="box-runway">
         <h2>Pasarela de pagos</h2>
+
         <p>Selecciona tu método de pago</p>
         <div class="box-tabs">
           <button>Tarjeta de crédito</button>
@@ -45,13 +45,12 @@
             <button>24</button>
           </div>
         </div>
-
       </div>
+
       <div class="box-list">
         <div class="list-items">
           <div class="add-item">
-            <img src="#" alt />
-            <!-- <img src="@/assets/images/one.jpg" alt="" /> -->
+            <img src="@/assets/images/front_end.jpg" alt />
             <div class="box-text">
               <h3>Gestión de Envases, Empaques y Embalajes</h3>
               <p>Dto. 25%</p>
@@ -61,10 +60,42 @@
               </div>
             </div>
           </div>
+
+          <div class="add-item">
+            <img src="@/assets/images/front_end.jpg" alt />
+            <div class="box-text">
+              <h3>Gestión de Envases, Empaques y Embalajes</h3>
+              <p>Dto. 25%</p>
+              <div class="delete-price">
+                <span>Eliminar</span>
+                <span>S/ 269.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-item">
+            <img src="@/assets/images/front_end.jpg" alt />
+            <div class="box-text">
+              <h3>Gestión de Envases, Empaques y Embalajes</h3>
+              <p>Dto. 25%</p>
+              <div class="delete-price">
+                <span>Eliminar</span>
+                <span>S/ 269.00</span>
+              </div>
+            </div>
+          </div>
+
+          <input class="input-n" type="text" placeholder="Agrega un código de descuento" />
+          <div class="box-details">
+            <span>Eliminar</span>
+            <span>S/ 269.00</span>
+          </div>
+          <hr />
         </div>
       </div>
+
       <div class="box-button">
-        <button class="btn_static">Finalizar compra</button>
+        <button class="btn_static center">Finalizar compra</button>
       </div>
     </div>
   </div>
