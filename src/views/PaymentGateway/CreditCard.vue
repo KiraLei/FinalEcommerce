@@ -56,6 +56,10 @@
             <button>24</button>
           </div>
         </div>
+        
+        <div class="box-button">
+          <button class="btn_static center">Finalizar compra</button>
+        </div>
       </div>
 
       <div class="box-list">
@@ -103,10 +107,6 @@
             <span>S/ 600.00</span>
           </div>
         </div>
-      </div>
-
-      <div class="box-button">
-        <button class="btn_static center">Finalizar compra</button>
       </div>
     </div>
   </div>
