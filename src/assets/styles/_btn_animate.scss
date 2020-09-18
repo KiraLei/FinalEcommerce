@@ -1,0 +1,17 @@
+.btn_animate {
+  width: 60px;
+  height: 50px;
+  background: #fff;
+  color: #555;
+  border: 2px solid #d3d3d3;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    transition: 0.2s;
+    background: $primary-color;
+    color: #fff;
+  }
+}

@@ -1,7 +1,7 @@
-<template>
+ <template>
   <div class="app">
-    <div class="roboto">Prueba roboto</div>
-    <ul>
+    <Header></Header>
+    <ul class="nav">
       <li>
         <router-link to="/auth/login">LOGIN</router-link>
       </li>
@@ -32,16 +32,19 @@
     </ul>
     <router-view></router-view>
   </div>
-</template>
+</template> 
 <script>
+import Header from "@/components/Header.vue";
 export default {
   name: "App",
+  components: {
+    Header,
+  },
 };
 </script>
 <style lang="scss">
-
 @import "./assets/styles/main.scss";
-@import'~bootstrap/dist/css/bootstrap.css';
+@import "~bootstrap/dist/css/bootstrap.css";
 
 
 </style>

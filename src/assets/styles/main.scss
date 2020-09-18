@@ -4,14 +4,18 @@
  
 @import "checkout";
 @import "creditcard";
-
- 
 @import "view_home";
+@import "checkout";
+@import "creditcard";
+@import "view_home";
+@import "input_normal";
+@import "btn_static";
+@import "btn_animate";
+@import "header";
+@import "footer";
+@import "globals";
 
-body{
-  background : $primary-color ;
-} 
- 
+
 
 
 

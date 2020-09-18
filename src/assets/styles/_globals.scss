@@ -5,3 +5,17 @@ $secondary-color: yellow;
 $tertiary-color: orange;
 
 $color-dark-blue:#000425;
+
+
+
+.color-dark-blue{
+    color:$color-dark-blue;
+}
+
+
+
+@media (max-width: 1200px) {
+    .w-md-100 {
+       width:100% !important;
+    }
+  }

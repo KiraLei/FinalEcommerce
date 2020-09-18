@@ -1,11 +1,17 @@
+.view-credit-card {
+  width: 100vw;
+  height: 100vh;
+  background: #f8f8f8;
+}
 .wrapper {
   width: 1200px;
   padding: 5px;
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
   .box-runway {
     width: 100%;
-    padding-right: 30px;
     h2 {
       font-size: 1.25rem;
     }
@@ -39,19 +45,32 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
-      input {
-        outline: none;
-        padding: 10px;
-        border: 2px solid #d3d3d3;
-        box-shadow: none;
-        color: #111;
-        box-sizing: border-box;
-        border-radius: 5px;
-      }
+      // input {
+      //   outline: none;
+      //   padding: 10px;
+      //   border: 2px solid #d3d3d3;
+      //   box-shadow: none;
+      //   color: #111;
+      //   box-sizing: border-box;
+      //   border-radius: 5px;
+      // }
       .container-tres {
+        max-width: 300px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        // input {
+        //   outline: none;
+        //   padding: 10px;
+        //   border: 2px solid #d3d3d3;
+        //   box-shadow: none;
+        //   color: #111;
+        //   box-sizing: border-box;
+        //   border-radius: 5px;
+        // }
       }
+    }
+    .box-dues {
+      padding-top: 40px;
     }
     .box-inputs-dues {
       display: flex;
@@ -76,7 +95,36 @@
     }
   }
   .box-list {
-    padding-left: 30px;
+    width: 433px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    .add-item {
+      display: flex;
+      margin: 10px 0;
+      img {
+        width: 130px;
+        height: 100px;
+        background: red;
+        border-radius: 5px;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+      .box-text {
+        h3 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .box-button {
+    .center{
+      width: 227px;
+      text-align: center;
+    }
   }
 }
 .box-list {
