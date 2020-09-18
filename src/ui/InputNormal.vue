@@ -15,7 +15,6 @@ export default Vue.extend({
 
 <style lang="scss">
 .input-normal-input-container {
-  font-family: Arial, Helvetica, sans-serif;
   width: 250px;
   input {
     width: 100%;

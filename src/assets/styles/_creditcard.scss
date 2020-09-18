@@ -1,132 +1,214 @@
 .view-credit-card {
-  width: 100vw;
-  height: 100vh;
-  background: #f8f8f8;
+  width: 100%;
+  height: 100%;
 }
+
 .wrapper {
   width: 1200px;
-  padding: 5px;
+  padding: 40px 10px 10px 10px;
+  box-sizing: border-box;
+  display: flex;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 60px;
-  .box-runway {
+  transition: 0.3s;
+  @media (max-width: 1200px){
+    transition: 0.3s;
     width: 100%;
-    h2 {
-      font-size: 1.25rem;
+  }
+  
+  @media (max-width: 920px){
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    transition: 0.3s;
+  }
+  
+  .box-runway {
+    width: 710px;
+    margin-right: 30px;
+    transition: 0.3s;
+    @media (max-width: 1150px){
+      transition: 0.3s;
+      margin-right: 0;
     }
+    @media (max-width: 920px){
+      margin: auto;
+      transition: 0.3s;
+    }
+    @media (max-width: 740px){
+      width: 100%;
+      transition: 0.3s;
+    }
+    
     p {
       font-size: 1rem;
       font-weight: bold;
+      margin: 0;
     }
-    .box-tabs {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      margin-bottom: 30px;
-      button {
-        width: 227px;
-        height: 50px;
-        background: #efefef;
-        color: #555555;
-        border: none;
-        font-size: 0.875rem;
+    .sub-title {
+      margin-bottom: 20px;
+    }
+    .title_inline {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      h2 {
+        margin-left: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.2s;
-        &:hover {
-          transition: 0.2s;
-          background: $primary-color;
-          color: #fff;
+      }
+    }
+    .nav_button {
+      .box-tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .container_pay {
+      .box-inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        @media (max-width: 580px){
+          grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
         }
       }
     }
-    .box-inputs {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-      // input {
-      //   outline: none;
-      //   padding: 10px;
-      //   border: 2px solid #d3d3d3;
-      //   box-shadow: none;
-      //   color: #111;
-      //   box-sizing: border-box;
-      //   border-radius: 5px;
-      // }
-      .container-tres {
-        max-width: 300px;
+    .container_credit_card {
+      padding-top: 30px;
+      .container-left-right {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        // input {
-        //   outline: none;
-        //   padding: 10px;
-        //   border: 2px solid #d3d3d3;
-        //   box-shadow: none;
-        //   color: #111;
-        //   box-sizing: border-box;
-        //   border-radius: 5px;
-        // }
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        @media (max-width: 580px){
+          grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+        }
+        .box-inputs-tres {
+          padding-top: 10px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 10px;
+        }
       }
     }
+
     .box-dues {
       padding-top: 40px;
     }
     .box-inputs-dues {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       button {
-        width: 60px;
-        height: 50px;
-        background: #fff;
+        padding: 20px 25px;
+        margin: 10px 0;
+        background: none;
         color: #555;
         border: 2px solid #d3d3d3;
         font-size: 0.875rem;
         font-weight: bold;
         border-radius: 5px;
         cursor: pointer;
-        transition: 0.2s;
+        transition: .3s;
         &:hover {
-          transition: 0.2s;
+          transition: .3s;
           background: $primary-color;
           color: #fff;
+        }
+        @media (max-width: 1025px){
+          transition: .3s;
+          margin: 10px 25px;
+        }
+        @media (max-width: 928px){
+          transition: .3s;
+          margin: 10px 20px;
+        }
+        @media (max-width: 920px){
+          transition: .3s;
+          margin: 10px 38px;
+        }
+        @media (max-width: 622px){
+          transition: .3s;
+          margin: 10px 30px;
+        }
+        @media (max-width: 557px){
+          transition: .3s;
+          margin: 10px 20px;
+        }
+        @media (max-width: 477px){
+          transition: .3s;
+          margin: 10px 10px;
         }
       }
     }
   }
   .box-list {
-    width: 433px;
+    width: 430px;
+    height: 610px;
     background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    .add-item {
-      display: flex;
-      margin: 10px 0;
-      img {
-        width: 130px;
+    padding: 50px;
+    border-radius: 5px;
+    margin-left: 30px;
+    transition: 0.5s;
+    @media (max-width: 1080px){
+      min-width: 390px;
+      transition: 0.3s;
+      margin-left: 20px;
+    }
+    @media (max-width: 920px){
+      width: 90%;
+      padding: 50px 30px 50px 30px;
+      margin: auto;
+    }
+    @media (max-width: 580px){
+      width: 90%;
+      padding: 50px 20px 50px 20px;
+      transition: 0.3s;
+    }
+    @media (max-width: 480px){
+      width: 100%;
+      padding: 50px 20px 50px 20px;
+      transition: 0.3s;
+    }
+    .list-items {
+      .add-item {
+        width: 100%;
         height: 100px;
-        background: red;
-        border-radius: 5px;
-        margin-right: 10px;
-        object-fit: cover;
-      }
-      .box-text {
-        h3 {
-          font-size: 15px;
+        display: flex;
+        margin-bottom: 20px;
+        img {
+          width: 130px;
+          height: 100px;
+          border-radius: 5px;
+          margin-right: 10px;
+          object-fit: cover;
         }
-        p {
-          font-size: 12px;
+        .box-text {
+          h3 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .box-pay {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: $primary-color;
         }
       }
     }
   }
   .box-button {
-    .center{
-      width: 227px;
-      text-align: center;
+    display: flex;
+    justify-content: center;
+    button {
+      width: 400px;
     }
   }
-}
-.box-list {
-  width: 433px;
 }

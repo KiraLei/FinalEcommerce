@@ -2,38 +2,49 @@
   <div class="view-credit-card">
     <div class="wrapper">
       <div class="box-runway">
-        <h2>Pasarela de pagos</h2>
-
-        <p>Selecciona tu método de pago</p>
-        <div class="box-tabs">
-          <button>Tarjeta de crédito</button>
-          <button>Tarjeta de débito</button>
-          <button>Depósito Pago Efectivo</button>
+        <div class="title_inline">
+          <img src="@/assets/images/arrow.svg" alt />
+          <h2>Pasarela de pagos</h2>
         </div>
 
-        <p>Depósito Pago Efectivo</p>
-        <div class="box-inputs">
-          <input class="input-n" type="text" placeholder="Documento de indentidad" />
-          <input class="input-n" type="text" placeholder="Correo electrónico" />
-        </div>
-
-        <p>Ingresa la información de tu tarjeta</p>
-        <div class="box-inputs">
-          <input class="input-n" type="text" placeholder="Documento de indentidad" />
-          <input class="input-n" type="text" placeholder="Correo electrónico" />
-        </div>
-
-        <div class="box-inputs">
-          <div class="container-tres">
-            <input class="input-n" type="text" placeholder="Mes" />
-            <input class="input-n" type="text" placeholder="Año" />
-            <input class="input-n" type="text" placeholder="cvc/cvv" />
+        <div class="nav_button">
+          <p class="sub-title">Selecciona tu método de pago</p>
+          <div class="box-tabs">
+            <button class="btn_animate">Tarjeta de crédito</button>
+            <button class="btn_animate">Tarjeta de débito</button>
+            <button class="btn_animate">Depósito Pago Efectivo</button>
           </div>
-          <div></div>
+        </div>
+
+        <div class="container_pay">
+          <p class="sub-title">Depósito Pago Efectivo</p>
+          <div class="box-inputs">
+            <input class="input-n" type="text" placeholder="Documento de indentidad" />
+            <input class="input-n" type="text" placeholder="Correo electrónico" />
+          </div>
+        </div>
+
+        <div class="container_credit_card">
+          <p class="sub-title">Ingresa la información de tu tarjeta</p>
+          <div class="container-left-right">
+            <div class="container-left">
+              <input class="input-n" type="text" placeholder="Franco Torres" />
+
+              <div class="box-inputs-tres">
+                <input class="input-n" type="text" placeholder="Mes" />
+                <input class="input-n" type="text" placeholder="Año" />
+                <input class="input-n" type="text" placeholder="cvc/cvv" />
+              </div>
+            </div>
+
+            <div class="box-inputs">
+              <input class="input-n" type="text" placeholder="Correo electrónico" />
+            </div>
+          </div>
         </div>
 
         <div class="box-dues">
-          <p>Nº de cuotas</p>
+          <p class="sub-title">Nº de cuotas</p>
           <div class="box-inputs-dues">
             <button>01</button>
             <button>02</button>
@@ -44,6 +55,10 @@
             <button>12</button>
             <button>24</button>
           </div>
+        </div>
+        
+        <div class="box-button">
+          <button class="btn_static center">Finalizar compra</button>
         </div>
       </div>
 
@@ -86,16 +101,12 @@
           </div>
 
           <input class="input-n" type="text" placeholder="Agrega un código de descuento" />
-          <div class="box-details">
-            <span>Eliminar</span>
-            <span>S/ 269.00</span>
-          </div>
           <hr />
+          <div class="box-pay">
+            <span>Precio final</span>
+            <span>S/ 600.00</span>
+          </div>
         </div>
-      </div>
-
-      <div class="box-button">
-        <button class="btn_static center">Finalizar compra</button>
       </div>
     </div>
   </div>

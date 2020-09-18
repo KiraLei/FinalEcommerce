@@ -4,7 +4,6 @@
 .view-home {
   .view-home-header {
     position: relative;
-    background-color: orange;
 
     .view-home-header-background {
       height: 500px;
@@ -14,10 +13,10 @@
       background-size: cover;
       object-fit: cover;
     }
-    .view-home-header-icono {
-      position: absolute;
-      bottom: 290px;
-    }
+    // .view-home-header-icono {
+    //   position: absolute;
+    //   bottom: 290px;
+    // }
     .view-home-header-texto-1 {
       @include font-big-1;
       position: absolute;

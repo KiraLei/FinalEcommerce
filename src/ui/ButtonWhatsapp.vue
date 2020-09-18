@@ -12,14 +12,13 @@ export default Vue.extend({
 });
 </script>
 
-
 <style lang="scss">
 .whatsapp {
   position: fixed;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  bottom: 150px;
+  bottom: 40px;
   right: 40px;
   border: none;
   color: #fff;
@@ -31,12 +30,5 @@ export default Vue.extend({
   img {
     width: 30px;
   }
-}
-.whatsapp:hover {
-  background: #05be62;
-  transition: 0.3s;
-}
-.whatsapp i {
-  font-size: 30px;
 }
 </style>
