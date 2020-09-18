@@ -3,12 +3,12 @@
     <div class="icons">
       <!-- LOGO -->
       <div>
-        <img src="@/assets/images/logo.png" class="logo" alt="logo" />
+        <img src="@/assets/images/logo_pachaqtec.svg" class="logo" alt="logo" />
       </div>
   
       <div>
-        <img src="@/assets/images/cart.png" class="cart" alt="Logotipo" />
-        <img src="@/assets/images/menu.png" class="menuicon" alt="Logotipo" />
+        <img src="@/assets/images/car_shoping.svg" class="cart" alt="Logotipo" />
+        <img src="@/assets/images/menu.svg" class="menuicon" alt="Logotipo" />
       </div>
     </div>
   </header>
