@@ -1,6 +1,6 @@
 <template>
   <div class="input-normal-input-container">
-    <input type="text" name="" id="name" placeholder="Nombre" required />
+    <input type="text" name="" id="name" :placeholder="placeholder" required />
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
+  props:['placeholder'],
   name:'InputNormal'
 });
 </script>
