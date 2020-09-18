@@ -18,3 +18,17 @@
 .list {
   display: flex;
 }
+
+@media only screen and (max-width: 1470px) {
+  .header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
