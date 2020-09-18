@@ -40,7 +40,9 @@
     @include font-big-2;
   }
 }
-
+.view-home-body{
+  background-color:#F2F3F5;
+}
 .view-home-footer-section-1 {
   position: relative;
   height: 300px;
@@ -78,6 +80,9 @@
       width: 80%;
       margin: auto;
       padding-top: 140px;
+      span{
+        font-size: 0.8rem;
+      }
     }
     img {
       width: 200px;
