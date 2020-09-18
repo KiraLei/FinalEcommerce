@@ -17,8 +17,8 @@ export default Vue.extend({
 
 <style lang="scss">
 .card-card {
-  width: 344px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;

@@ -19,7 +19,7 @@ export default Vue.extend({
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  bottom: 30px;
+  bottom: 150px;
   right: 40px;
   border: none;
   color: #fff;
