@@ -1,19 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="184.284" height="33" viewBox="0 0 184.284 33">
-  <g id="Grupo_17590" data-name="Grupo 17590" transform="translate(-86 -14)">
-    <path id="Trazado_5404" data-name="Trazado 5404" d="M0-84.2H0v22.53L7.813-54.2H22.145l1.078-1.034-2.185-2.525-.225.225H9.146L3.323-63.092v-17.78H26.636v17.78l-.412.39L28.4-60.177l1.564-1.491V-84.2Zm6.653,6.661h0v12.46l4.416,4.211h7.282l-2.859-3.327.015-.008H12.4L9.984-66.509V-74.2h9.991v4.256l3.33,3.859V-77.538Zm6.661,6.668h0v3.334h1.819L26.636-54.2h3.33v-3.334H28.148l-11.5-13.337Zm0,0" transform="translate(86 98.199)" fill="#fff"/>
-    <g id="Grupo_7" data-name="Grupo 7" transform="translate(128 14)">
-      <path id="Trazado_2" data-name="Trazado 2" d="M128.023-55.342h-8v3h8Zm1.99-2h0v7h-9.986v5h-1.989v-12Zm0,0" transform="translate(-118.037 57.344)" fill="#fff"/>
-      <path id="Trazado_3" data-name="Trazado 3" d="M160.932-55.342h-7.987v3h7.987Zm2-2h0v12h-2v-5h-7.987v5h-2v-12Zm0,0" transform="translate(-135.924 57.344)" fill="#fff"/>
-      <path id="Trazado_4" data-name="Trazado 4" d="M195.852-57.344h0v2h-9.986v8h9.986v2H183.877v-12Zm0,0" transform="translate(-153.823 57.344)" fill="#fff"/>
-      <path id="Trazado_5" data-name="Trazado 5" d="M218.786-50.348h0v5h-2v-12h2v5h7.987v-5h2v12h-2v-5Zm0,0" transform="translate(-171.71 57.344)" fill="#fff"/>
-      <path id="Trazado_6" data-name="Trazado 6" d="M259.7-55.342h-7.987v3H259.7Zm2-2h0v12h-2v-5h-7.987v5h-2v-12Zm0,0" transform="translate(-189.609 57.344)" fill="#fff"/>
-      <path id="Trazado_7" data-name="Trazado 7" d="M284.626-44.391h-2v-1.992h2Zm0,0" transform="translate(-207.496 51.386)" fill="#fff"/>
-      <path id="Trazado_8" data-name="Trazado 8" d="M303.667-55.342H295.68v8h2.989v-2h2v2h3Zm2-2h0v12h-5v2h-2v-2h-4.988v-12Zm0,0" transform="translate(-213.504 57.344)" fill="#fff"/>
-      <path id="Trazado_9" data-name="Trazado 9" d="M328.59-44.391h-2v-1.992h2Zm0,0" transform="translate(-231.392 51.386)" fill="#fff"/>
-      <path id="Trazado_10" data-name="Trazado 10" d="M349.63-57.344h0v2h-5v10h-2v-10h-4.988v-2Zm0,0" transform="translate(-237.4 57.344)" fill="#fff"/>
-      <path id="Trazado_11" data-name="Trazado 11" d="M382.539-57.344h0v2h-9.986v3h9.986v1.992h-9.986v3h9.986v2H370.554v-12Zm0,0" transform="translate(-255.287 57.344)" fill="#fff"/>
-      <path id="Trazado_12" data-name="Trazado 12" d="M403.485-57.344h0v12H415.47v-2h-9.986v-8h9.986v-2Zm0,0" transform="translate(-273.186 57.344)" fill="#fff"/>
-    </g>
-    <text id="ESCUELA_DE_CODING" data-name="ESCUELA DE CODING" transform="translate(128 43)" fill="#fff" font-size="12" font-family="Poppins-Regular, Poppins" letter-spacing="0.12em"><tspan x="0" y="0">ESCUELA DE CODING</tspan></text>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 184.3 33" style="enable-background:new 0 0 184.3 33;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{enable-background:new    ;}
+</style>
+<g id="Grupo_17590" transform="translate(-86 -14)">
+	<path id="Trazado_5404" class="st0" d="M86,15.5L86,15.5V38l7.8,7.5h14.3l1.1-1L107,42l-0.2,0.2H95.1l-5.8-5.6V18.8h23.3v17.8
+		l-0.4,0.4l2.2,2.5L116,38V15.5H86z M92.7,22.2L92.7,22.2v12.5l4.4,4.2h7.3l-2.9-3.3l0,0h-3.1L96,33.2v-7.7h10v4.3l3.3,3.9V22.2
+		H92.7z M99.3,28.8L99.3,28.8v3.3h1.8l11.5,13.4h3.3v-3.3h-1.8l-11.5-13.3L99.3,28.8z"/>
+	<g id="Grupo_7" transform="translate(128 14)">
+		<path id="Trazado_2" class="st0" d="M10,3.5H2v3h8V3.5z M12,1.5L12,1.5v7H2v5H0v-12H12z"/>
+		<path id="Trazado_3" class="st0" d="M25,3.5h-8v3h8V3.5z M27,1.5L27,1.5v12h-2v-5h-8v5h-2v-12H27z"/>
+		<path id="Trazado_4" class="st0" d="M42,1.5L42,1.5v2H32v8h10v2H30v-12H42z"/>
+		<path id="Trazado_5" class="st0" d="M47.1,8.5L47.1,8.5v5h-2v-12h2v5h8v-5h2v12h-2v-5H47.1z"/>
+		<path id="Trazado_6" class="st0" d="M70.1,3.5h-8v3h8V3.5z M72.1,1.5L72.1,1.5v12h-2v-5h-8v5h-2v-12H72.1z"/>
+		<path id="Trazado_7" class="st0" d="M77.1,8.5h-2v-2h2V8.5z"/>
+		<path id="Trazado_8" class="st0" d="M90.2,3.5h-8v8h3v-2h2v2h3V3.5z M92.2,1.5L92.2,1.5v12h-5v2h-2v-2h-5v-12H92.2z"/>
+		<path id="Trazado_9" class="st0" d="M97.2,8.5h-2v-2h2V8.5z"/>
+		<path id="Trazado_10" class="st0" d="M112.2,1.5L112.2,1.5v2h-5v10h-2v-10h-5v-2H112.2z"/>
+		<path id="Trazado_11" class="st0" d="M127.3,1.5L127.3,1.5v2h-10v3h10v2h-10v3h10v2h-12v-12H127.3z"/>
+		<path id="Trazado_12" class="st0" d="M130.3,1.5L130.3,1.5v12h12v-2h-10v-8h10v-2H130.3z"/>
+	</g>
+	<g class="st1">
+		<path class="st0" d="M133.4,37H130v2.8h3v0.9h-3v2.9h3.4v0.9h-4.5v-8.4h4.5V37z"/>
+		<path class="st0" d="M139.2,44.6c-1.7,0-2.9-0.9-2.9-2.3h1.2c0.1,0.7,0.6,1.4,1.7,1.4c1.1,0,1.7-0.6,1.7-1.4
+			c0-2.3-4.5-0.8-4.5-3.9c0-1.4,1.1-2.3,2.8-2.3c1.6,0,2.6,0.9,2.8,2.1h-1.2c-0.1-0.6-0.6-1.2-1.6-1.2c-0.9,0-1.6,0.4-1.6,1.3
+			c0,2.2,4.5,0.8,4.5,3.9C141.9,43.4,141,44.6,139.2,44.6z"/>
+		<path class="st0" d="M148.7,36c1.8,0,3.3,0.9,3.9,2.5h-1.3c-0.5-1-1.3-1.6-2.6-1.6c-1.8,0-3.1,1.3-3.1,3.3s1.3,3.3,3.1,3.3
+			c1.2,0,2.1-0.6,2.6-1.6h1.3c-0.6,1.6-2.1,2.5-3.9,2.5c-2.3,0-4.2-1.8-4.2-4.3S146.4,36,148.7,36z"/>
+		<path class="st0" d="M155.6,36.1h1.1v5.3c0,1.5,0.8,2.2,2.1,2.2s2.1-0.7,2.1-2.2v-5.3h1.1v5.3c0,2.2-1.4,3.2-3.2,3.2
+			s-3.1-1-3.1-3.2v-5.3H155.6z"/>
+		<path class="st0" d="M169.7,37h-3.4v2.8h3v0.9h-3v2.9h3.4v0.9h-4.5v-8.4h4.5V37z"/>
+		<path class="st0" d="M173.9,36.1v7.5h2.9v0.9h-4v-8.4H173.9z"/>
+		<path class="st0" d="M184.3,42.6h-3.6l-0.7,1.9h-1.2l3-8.3h1.3l3,8.3H185L184.3,42.6z M182.5,37.5l-1.5,4.2h3L182.5,37.5z"/>
+		<path class="st0" d="M200.6,40.3c0,2.6-1.7,4.2-4.4,4.2h-2.6v-8.4h2.6C198.9,36.1,200.6,37.7,200.6,40.3z M196.1,43.6
+			c2.2,0,3.3-1.2,3.3-3.3c0-2-1.1-3.3-3.3-3.3h-1.5v6.6H196.1z"/>
+		<path class="st0" d="M208,37h-3.4v2.8h3v0.9h-3v2.9h3.4v0.9h-4.5v-8.4h4.5V37z"/>
+		<path class="st0" d="M219.4,36c1.8,0,3.3,0.9,3.9,2.5H222c-0.5-1-1.3-1.6-2.6-1.6c-1.8,0-3.1,1.3-3.1,3.3s1.3,3.3,3.1,3.3
+			c1.2,0,2.1-0.6,2.6-1.6h1.3c-0.6,1.6-2.1,2.5-3.9,2.5c-2.3,0-4.2-1.8-4.2-4.3S217.1,36,219.4,36z"/>
+		<path class="st0" d="M230.2,44.6c-2.4,0-4.2-1.8-4.2-4.3s1.8-4.3,4.2-4.3s4.2,1.8,4.2,4.3S232.5,44.6,230.2,44.6z M230.2,43.6
+			c1.8,0,3.1-1.3,3.1-3.3c0-2.1-1.3-3.3-3.1-3.3s-3.1,1.3-3.1,3.3C227.1,42.4,228.4,43.6,230.2,43.6z"/>
+		<path class="st0" d="M244.3,40.3c0,2.6-1.7,4.2-4.4,4.2h-2.6v-8.4h2.6C242.6,36.1,244.3,37.7,244.3,40.3z M239.8,43.6
+			c2.2,0,3.3-1.2,3.3-3.3c0-2-1.1-3.3-3.3-3.3h-1.5v6.6H239.8z"/>
+		<path class="st0" d="M247.1,36.1h1.1v8.4h-1.1V36.1z"/>
+		<path class="st0" d="M258.1,36.1v8.4H257l-4.4-6.7v6.7h-1.1v-8.4h1.1l4.4,6.6v-6.6H258.1z"/>
+		<path class="st0" d="M269,38.6h-1.3c-0.5-1-1.4-1.5-2.5-1.5c-1.8,0-3.1,1.3-3.1,3.3s1.3,3.3,3.1,3.3c1.6,0,2.8-1.1,2.9-2.7h-3.3
+			v-0.9h4.5v0.8c-0.2,2.1-1.8,3.7-4.1,3.7c-2.4,0-4.2-1.8-4.2-4.3s1.8-4.3,4.2-4.3C266.9,36,268.4,37,269,38.6z"/>
+	</g>
+</g>
 </svg>
