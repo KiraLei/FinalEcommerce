@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="view-checkout checkout">
-      <div >
+      <div>
         <div class="firt-section">
           <div class="checkout-card">
             <figure>
@@ -10,7 +10,10 @@
             <div class="checkout-align">
               <h2>Gestión de Envases, Empaques y Embalajes</h2>
               <h3>Dto. 25%</h3>
-              <a href>Eliminar</a>
+              <div class="amount-card">
+                <a href>Eliminar</a>
+                <div class="amount-second">s/269.00</div>
+              </div>
             </div>
           </div>
           <div class="amount">s/269.00</div>
@@ -23,42 +26,18 @@
             <div class="checkout-align">
               <h2>Gestión de Envases, Empaques y Embalajes</h2>
               <h3>Dto. 25%</h3>
-              <a href>Eliminar</a>
-            </div>
-          </div>
-          <div class="amount">s/269.00</div>
-        </div>
-        <div class="firt-section">
-          <div class="checkout-card">
-            <figure>
-              <img src="@/assets/images/shippingcar1.png" />
-            </figure>
-            <div class="checkout-align">
-              <h2>Gestión de Envases, Empaques y Embalajes</h2>
-              <h3>Dto. 25%</h3>
-              <a href>Eliminar</a>
-            </div>
-          </div>
-          <div class="amount">s/269.00</div>
-        </div>
-        <div class="firt-section">
-          <div class="checkout-card">
-            <figure>
-              <img src="@/assets/images/shippingcar1.png" />
-            </figure>
-            <div class="checkout-align">
-              <h2>Gestión de Envases, Empaques y Embalajes</h2>
-              <h3>Dto. 25%</h3>
-              <a href>Eliminar</a>
+              <div class="amount-card">
+                <a href>Eliminar</a>
+                <div class="amount-second">s/269.00</div>
+              </div>
             </div>
           </div>
           <div class="amount">s/269.00</div>
         </div>
       </div>
-
       <div class="pay-card">
         <div class="width">
-          <div class="amount">
+          <div class="amount-pay">
             <div>Subtotal</div>
             <span>s/ 600.00</span>
           </div>
