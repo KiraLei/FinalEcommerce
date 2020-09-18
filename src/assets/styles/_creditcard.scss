@@ -3,72 +3,69 @@
   height: 100vh;
   background: #f8f8f8;
 }
+
 .wrapper {
   width: 1200px;
-  padding: 5px;
+  padding: 40px 10px 10px 10px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 60px;
+  grid-template-columns: 710px 430px;
+  grid-column-gap: 40px;
+
   .box-runway {
     width: 100%;
-    h2 {
-      font-size: 1.25rem;
-    }
+
     p {
       font-size: 1rem;
       font-weight: bold;
+      margin: 0;
     }
-    .box-tabs {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      margin-bottom: 30px;
-      button {
-        width: 227px;
-        height: 50px;
-        background: #efefef;
-        color: #555555;
-        border: none;
-        font-size: 0.875rem;
+    .sub-title {
+      margin-bottom: 20px;
+    }
+    .title_inline {
+      height: 30px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      h2 {
+        margin-left: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.2s;
-        &:hover {
-          transition: 0.2s;
-          background: $primary-color;
-          color: #fff;
+      }
+    }
+    .nav_button {
+      .box-tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .container_pay {
+      .box-inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+    }
+    .container_credit_card {
+      padding-top: 30px;
+      .container-left-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        .box-inputs-tres {
+          padding-top: 10px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 10px;
         }
       }
     }
-    .box-inputs {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-      // input {
-      //   outline: none;
-      //   padding: 10px;
-      //   border: 2px solid #d3d3d3;
-      //   box-shadow: none;
-      //   color: #111;
-      //   box-sizing: border-box;
-      //   border-radius: 5px;
-      // }
-      .container-tres {
-        max-width: 300px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        // input {
-        //   outline: none;
-        //   padding: 10px;
-        //   border: 2px solid #d3d3d3;
-        //   box-shadow: none;
-        //   color: #111;
-        //   box-sizing: border-box;
-        //   border-radius: 5px;
-        // }
-      }
-    }
+
     .box-dues {
       padding-top: 40px;
     }
@@ -78,7 +75,7 @@
       button {
         width: 60px;
         height: 50px;
-        background: #fff;
+        background: none;
         color: #555;
         border: 2px solid #d3d3d3;
         font-size: 0.875rem;
@@ -95,38 +92,49 @@
     }
   }
   .box-list {
-    width: 433px;
+    width: 430px;
+    height: 610px;
     background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    .add-item {
-      display: flex;
-      margin: 10px 0;
-      img {
-        width: 130px;
+    padding: 50px;
+    border-radius: 5px;
+    .list-items {
+      .add-item {
+        width: 100%;
         height: 100px;
-        background: red;
-        border-radius: 5px;
-        margin-right: 10px;
-        object-fit: cover;
-      }
-      .box-text {
-        h3 {
-          font-size: 15px;
+        display: flex;
+        margin-bottom: 20px;
+        img {
+          width: 130px;
+          height: 100px;
+          border-radius: 5px;
+          margin-right: 10px;
+          object-fit: cover;
         }
-        p {
-          font-size: 12px;
+        .box-text {
+          h3 {
+            font-size: 15px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      .box-pay {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: $primary-color;
         }
       }
     }
   }
   .box-button {
-    .center{
-      width: 227px;
-      text-align: center;
+    display: flex;
+    justify-content: center;
+    button {
+      width: 400px;
     }
   }
-}
-.box-list {
-  width: 433px;
 }
