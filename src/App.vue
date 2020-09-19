@@ -58,10 +58,9 @@ export default {
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .app {
- /* width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: $background-color;*/
+  background-color: $background-color;
 }
 </style>
