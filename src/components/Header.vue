@@ -3,22 +3,156 @@
     <div class="icons">
       <!-- LOGO -->
       <div>
-        <img src="@/assets/images/logo_pachaqtec.svg" class="logo" alt="logo" />
+        <img src="@/assets/images/iconoPachaqtec.png" class="logo" alt="logo" />
+     
       </div>
-  
+
       <div>
-        <img src="@/assets/images/car_shoping.svg" class="cart" alt="Logotipo" />
-        <img src="@/assets/images/menu.svg" class="menuicon" alt="Logotipo" />
+        <img
+          src="@/assets/images/car_shoping.svg"
+          class="cart"
+          alt="Logotipo"
+        />
+        <img
+          src="@/assets/images/menu.svg"
+          v-on:click="menuIconClick"
+          class="menuicon"
+          alt="Logotipo"
+        />
       </div>
     </div>
+    <div
+      v-if="showMenu"
+      id="divMenuPrincipal"
+      ref="divMenuPrincipal"
+      class="menu-principal"
+    >
+      <div     class="menu-principal-body">
+        <ul>
+          <li>
+            <p v-on:click="menu_login">LOGIN</p>
+          </li>
+          <li>
+            <p v-on:click="menu_register">REGISTER</p>
+          </li>
+          <li>
+            <p v-on:click="menu_home">HOME</p>
+          </li>
+          <li>
+            <p v-on:click="menu_detalle">DETALLE HOME</p>
+          </li>
+          <li>
+            <p v-on:click="menu_pagoCheckout">PAGO / CHECKOUT</p>
+          </li>
+          <li>
+            <p v-on:click="menu_pagoTarjetaCredito">
+              PAGO / TARJETA DE CREDITO
+            </p>
+          </li>
+          <li>
+            <p v-on:click="menu_tarjetaTarjetaDebito">
+              PAGO / TARJETA DE DEBITO
+            </p>
+          </li>
+          <li>
+            <p v-on:click="menu_pagoEfectivo">PAGO / PAGO EFECTIVO</p>
+          </li>
+          <li>
+            <p v-on:click="menu_pagoResumen">PAGO / COMPRA RESUMEN</p>
+          </li>
+        </ul> 
+      </div>
+       <FooterComponent/>
+    </div>
+  
   </header>
 </template>
 
 <script>
-export default {
+import Vue from "vue";
+import FooterComponent from './Footer.vue';
+
+export default Vue.extend({
   name: "Header",
-};
+  components:{
+    FooterComponent,
+  },
+  data() {
+    return {
+      showMenu: false,
+    };
+  },
+  methods: {
+    menuIconClick: function () {
+      this.showMenu = !this.showMenu;
+      console.log(this.showMenu);
+
+      let divMenuPrincipal = this.ref;
+      console.log(divMenuPrincipal);
+    },
+    menu_login: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/auth/login",
+      });
+    },
+
+    menu_register: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/auth/register",
+      });
+    },
+
+    menu_home: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/",
+      });
+    },
+    menu_detalle: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/detalle",
+      });
+    },
+
+    menu_pagoCheckout: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/pago/checkout",
+      });
+    },
+
+    menu_pagoTarjetaCredito: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/pago/tarjeta-de-credito",
+      });
+    },
+
+    menu_tarjetaTarjetaDebito: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/pago/tarjeta-de-debito",
+      });
+    },
+
+    menu_pagoEfectivo: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/pago/efectivo",
+      });
+    },
+
+    menu_pagoResumen: function () {
+      this.showMenu = false;
+      this.$router.push({
+        path: "/pago/resumen",
+      });
+    },
+  },
+});
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

@@ -4,6 +4,7 @@
 .view-home {
   .view-home-header {
     position: relative;
+   
 
     .view-home-header-background {
       height: 500px;
@@ -13,20 +14,17 @@
       background-size: cover;
       object-fit: cover;
     }
-    // .view-home-header-icono {
-    //   position: absolute;
-    //   bottom: 290px;
-    // }
+   
     .view-home-header-texto-1 {
       @include font-big-1;
       position: absolute;
-      bottom: 100px;
+      bottom: 160px;
     }
 
     .view-home-header-texto-2 {
       @include font-big-2;
       position: absolute;
-      bottom: 20px;
+      bottom: 80px;
     }
   }
   .view-home-body-texto-1 {
@@ -41,10 +39,12 @@
 }
 .view-home-body{
   background-color:#F2F3F5;
+  margin-top: 60px;
 }
 .view-home-footer-section-1 {
   position: relative;
   height: 300px;
+   ;
   background: transparent linear-gradient(180deg, #3015fd 0%, #5640ff 100%) 0%
     0% no-repeat padding-box;
   opacity: 1;

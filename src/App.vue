@@ -1,6 +1,7 @@
- <template>
+<template>
   <div class="app">
     <Header></Header>
+    <!--
     <ul class="nav">
       <li>
         <router-link to="/auth/login">LOGIN</router-link>
@@ -30,15 +31,25 @@
         <router-link to="/pago/resumen">PAGO / COMPRA RESUMEN</router-link>
       </li>
     </ul>
-    <router-view></router-view>
+    -->
+    <div style="margin-top:60px;">
+       <router-view></router-view>
+    </div>
+   
+    <ButtonWhatsapp></ButtonWhatsapp>
+    <Footer></Footer>
   </div>
-</template> 
+</template>
 <script>
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import ButtonWhatsapp from "@/ui/ButtonWhatsapp.vue";
 export default {
   name: "App",
   components: {
     Header,
+    Footer,
+    ButtonWhatsapp
   },
 };
 </script>
@@ -46,5 +57,7 @@ export default {
 @import "./assets/styles/main.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
 
-
+.app {
+  width: 100vw;
+}
 </style>
