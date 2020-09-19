@@ -4,6 +4,7 @@
       <!-- LOGO -->
       <div>
         <img src="@/assets/images/iconoPachaqtec.png" class="logo" alt="logo" />
+     
       </div>
 
       <div>

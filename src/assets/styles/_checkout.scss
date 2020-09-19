@@ -94,6 +94,7 @@
     padding: 0.9rem 2rem;
     font-size: 1.1rem;
     border-radius: 10px;
+    border: none;
     &:focus {
       outline: none;
     }
@@ -101,6 +102,7 @@
       background-color: #fff;
       color: #5640ff;
       font-weight: 700;
+      border: 2px solid #5640ff;
     }
   }
 }
@@ -174,7 +176,6 @@
 @media only screen and (max-width: 630px) {
   .firt-section {
     flex-direction: column;
-  
   }
   .amount-card {
     display: flex;
@@ -218,7 +219,7 @@
   .view-checkout {
     padding: 0.2rem;
   }
-  .cart{
+  .cart {
     margin-right: 1rem !important;
   }
 }
@@ -227,5 +228,72 @@
   .pay-card input {
     font-size: 0.7rem;
   }
-  
+}
+
+/*card compra exitosa*/
+.exit-pay {
+  margin-bottom: 4rem;
+  div {
+    color: #222222;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-top: 1rem;
+  }
+  span {
+    color: #222222;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+.div-line {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.final-amount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #5640ff;
+}
+
+@media only screen and (max-width: 1450px) {
+  .div-line {
+    margin-left: -2rem;
+  }
+  .final-amount {
+    margin-right: 2rem;
+  }
+}
+/*arrow header*/
+.checkout-component {
+  .title_inline {
+    display: flex;
+    margin-left: 7rem;
+    justify-content: start;
+    align-items: center;
+
+    div {
+      margin-left: 1.2%;
+      margin-right: 1rem;
+      height: 100%;
+      img {
+        align-self: center;
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 0rem;
+      align-self: center;
+    }
+  }
 }

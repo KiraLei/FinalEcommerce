@@ -1,12 +1,8 @@
 <template>
   <div class="footer">
-   
-
-   <div class='container'>
-            <img src="@/assets/images/respaldo2.png"    />
-  </div>
-       
-   
+    <div class="container">
+      <img src="@/assets/images/respaldo2.png" />
+    </div>
   </div>
 </template>
 

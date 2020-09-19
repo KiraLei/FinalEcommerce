@@ -8,7 +8,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Input",
+  name: "ButtonWhatsapp",
 });
 </script>
 
