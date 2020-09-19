@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" id="77f1a006-6668-41ea-a5cd-9215be17056f">
     <div class="icons">
       <!-- LOGO -->
       <div>
