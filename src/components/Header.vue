@@ -6,13 +6,15 @@
         <img src="@/assets/images/iconoPachaqtec.png" class="logo" alt="logo" />
       </div>
 
-      <div>
+      <div >
         <img
           v-if="!showMenu"
           src="@/assets/images/car_shoping.svg"
           class="cart"
           alt="Logotipo"
         />
+
+ 
         <img
          v-if="!showMenu"
           src="@/assets/images/menu.svg"
@@ -20,6 +22,7 @@
           class="menuicon"
           alt="Logotipo"
         />
+ 
         <p class="menu-principal-close" v-if="showMenu"  v-on:click='showMenuFalse'>X</p>
       </div>
     </div>
@@ -86,7 +89,7 @@ export default Vue.extend({
   methods: {
     menuIconClick: function () {
       this.showMenu = !this.showMenu;
-      console.log(this.showMenu);
+     // console.log(this.showMenu);
 
       if (this.showMenu) {
         document.body.style.overflow = "hidden";
