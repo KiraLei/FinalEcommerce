@@ -1,22 +1,24 @@
 <template>
   <div class="mobile-phone">
-    <p>
-      Postula y obtén un 10% de descuento en el programa
-    </p>
+    <p>Postula y obtén un 10% de descuento en el programa</p>
     <InputNormalComponent class="mobile-phone-control" placeholder="NOMBRE" />
     <InputNormalComponent class="mobile-phone-control" placeholder="CELULAR" />
     <InputNormalComponent class="mobile-phone-control" placeholder="CORREO ELECTRONICO" />
-    
-    <select name="" id="" class="mobile-phone-control">
+
+    <select name id class="mobile-phone-control">
       <option value="0">PROGRAMA</option>
-      <option value="" >Desarrollo Front-End</option>
-      <option value="">Desarrollo Back-End</option>
-      <option value="">Desarrollo de Aplicativos Móviles</option>
-      <option value="">Diseño de Experiencia del Usuario</option>
-      <option value="">Desarrollo de Videojuegos</option>
+      <option value>Desarrollo Front-End</option>
+      <option value>Desarrollo Back-End</option>
+      <option value>Desarrollo de Aplicativos Móviles</option>
+      <option value>Diseño de Experiencia del Usuario</option>
+      <option value>Desarrollo de Videojuegos</option>
     </select>
+    <div class="terms">
+      <input type="checkbox" />
+      Acepto
+      <span>Terminos y condiciones</span>
+    </div>
     <Button1Component class="mobile-phone-control" title="Quiero Postular" />
-    
   </div>
 </template>
 
@@ -31,7 +33,7 @@ export default Vue.extend({
     InputNormalComponent,
     Button1Component,
   },
-   data() {
+  data() {
     return {
       nombre: "nombre",
     };
@@ -43,19 +45,14 @@ export default Vue.extend({
 .mobile-phone {
   width: 288px;
   height: 529px;
-
   position: fixed;
   top: 250px;
-
   z-index: 5000;
-
   background-image: url(~@/assets/images/mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   padding: 60px 40px;
-
   display: flex;
   justify-content: center;
 }
@@ -63,4 +60,24 @@ export default Vue.extend({
   width: 200px;
   margin: 15px 0;
 }
+select {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.terms{
+  font-size: 0.7rem;
+  span{
+    font-weight: 600;
+    text-decoration-line: underline;
+  }
+}
+
+
 </style>
