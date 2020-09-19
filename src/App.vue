@@ -1,7 +1,7 @@
 <template>
   <div class="app">
-    <Header></Header>
-    <!--
+     <Header></Header>
+   <!--
     <ul class="nav">
       <li>
         <router-link to="/auth/login">LOGIN</router-link>
@@ -37,7 +37,7 @@
     </div>
    
     <ButtonWhatsapp></ButtonWhatsapp>
-    <Footer></Footer>
+ <Footer/>
   </div>
 </template>
 <script>
@@ -48,7 +48,7 @@ export default {
   name: "App",
   components: {
     Header,
-    Footer,
+   Footer,
     ButtonWhatsapp
   },
 };
@@ -58,10 +58,10 @@ export default {
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .app {
-  width: 100vw;
+ /* width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: $background-color;
+  background-color: $background-color;*/
 }
 </style>
