@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="box-runway">
         <div class="title_inline">
-          <img src="@/assets/images/arrow.svg" alt />
+         <!-- <img src="@/assets/images/arrow.svg" alt /> -->
           <h2>Pasarela de pagos</h2>
         </div>
 
