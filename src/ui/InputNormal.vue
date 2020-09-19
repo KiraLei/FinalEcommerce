@@ -1,6 +1,6 @@
 <template>
   <div class="input-normal-input-container">
-    <input type="text" name="" id="name" :placeholder="placeholder" required />
+    <input type="text" name id="name" :placeholder="placeholder" required />
   </div>
 </template>
 
@@ -8,8 +8,8 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  props:['placeholder'],
-  name:'InputNormal'
+  props: ["placeholder"],
+  name: "InputNormal",
 });
 </script>
 
@@ -25,6 +25,10 @@ export default Vue.extend({
     color: #111;
     box-sizing: border-box;
     border-radius: 5px;
+    &::placeholder { 
+      color: #111;
+      font-size: 0.8rem;
+      }
   }
   input:valid {
     border-color: #5640ff;

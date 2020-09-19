@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="view-home-body">
+    <div class="view-home-body" style="padding-bottom: 150px;">
       <div class="container-fluid container-md">
         <div class="row">
           <div class="offset-8"></div>
@@ -63,7 +63,7 @@
           <p>Sé parte de la comunidad</p>
           <span>
             Programas virtuales para el desarrollo de habilidades de
-            programación a lo largo de todo el Stack tecnológico. Al finalizar
+            programación a lo largo de todo el Stack tecnológico. <br><br> Al finalizar
             sabrás cómo crear una página web y desarrollar la lógica detrás del
             funcionamiento de una aplicación, así como formar parte de una gran
             comunidad de desarrolladores.
