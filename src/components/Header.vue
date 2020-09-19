@@ -6,7 +6,7 @@
         <img src="@/assets/images/iconoPachaqtec.png" class="logo" alt="logo" />
       </div>
 
-      <div >
+      <div>
         <img
           v-if="!showMenu"
           src="@/assets/images/car_shoping.svg"
@@ -14,16 +14,21 @@
           alt="Logotipo"
         />
 
- 
         <img
-         v-if="!showMenu"
+          v-if="!showMenu"
           src="@/assets/images/menu.svg"
           v-on:click="menuIconClick"
           class="menuicon"
           alt="Logotipo"
         />
- 
-        <p class="menu-principal-close" v-if="showMenu"  v-on:click='showMenuFalse'>X</p>
+
+        <p
+          class="menu-principal-close"
+          v-if="showMenu"
+          v-on:click="showMenuFalse"
+        >
+          X
+        </p>
       </div>
     </div>
     <div
@@ -84,12 +89,25 @@ export default Vue.extend({
   data() {
     return {
       showMenu: false,
+      existTransparent: false,
     };
   },
   methods: {
     menuIconClick: function () {
+      let obj = document.getElementById("77f1a006-6668-41ea-a5cd-9215be17056f");
+
+      this.existTransparent = obj.classList.contains(
+        "header-background-transparent"
+      );
+
+      if (this.existTransparent) {
+        document
+          .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
+          .classList.remove("header-background-transparent");
+      }
+
       this.showMenu = !this.showMenu;
-     // console.log(this.showMenu);
+      // console.log(this.showMenu);
 
       if (this.showMenu) {
         document.body.style.overflow = "hidden";
@@ -98,6 +116,11 @@ export default Vue.extend({
     showMenuFalse: function () {
       this.showMenu = false;
       document.body.style.overflow = "auto";
+      if (this.existTransparent) {
+        document
+          .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
+          .classList.add("header-background-transparent");
+      }
     },
     menu_login: function () {
       this.showMenuFalse();
