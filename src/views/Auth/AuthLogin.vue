@@ -1,6 +1,5 @@
 <template>
   <div class="auth-login">
-    <!-- <h2>PAGINA LOGIN</h2> -->
     <div class="app__hero">
       <!-- <img class="hero-logo" src="@/assets/logo-pachaqtec.png" alt="" /> -->
       <div class="hero-text">
@@ -9,9 +8,10 @@
       </div>
       <div class="hero-respaldo">
         <h5>Con el respaldo de:</h5>
-        <!-- <img src="@/assets/respaldo.png" alt="" /> -->
+        <!-- <img src="@/assets/images/bannerlogin.png" alt="" /> -->
       </div>
     </div>
+
     <div class="app__form">
       <div class="nav">
         <router-link class="login" to="/login">Login</router-link>
@@ -24,6 +24,7 @@
         <h4>¿Olvidaste tu contraseña?</h4>
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -34,12 +35,19 @@ export default {
 </script>
 
 <style lang="scss" scoped >
+.auth-login{
+  height: 100%;
+  
+  display: flex;
+  align-items: stretch;
+}
 .login {
   padding: 10px;
   margin-top: 50px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  background: red;
 }
 
 input {
@@ -76,7 +84,8 @@ h4 {
 }
 
 /*-----MOBILE-----*/
-.app__hero {
+
+/*.app__hero {
   display: none;
 }
 
@@ -110,23 +119,27 @@ h4 {
     }
   }
 }
-
+*/
 /*-----DESKTOP-----*/
 
 @media screen and (min-width: 1024px) {
   #app {
     width: 100%;
-
     display: flex;
   }
 
   .app__hero {
+    width: 100%;
+    height: 100%;
     padding: 24px 70px 30px 80px;
-    display: block;
-    width: 70%;
-    background-color: #3b00ff;
+    background-image: url(~@/assets/images/bannerlogin.png);
+    object-fit: cover;
+    background-origin: center;
+    background-repeat: no-repeat;
   }
-
+.app__form{
+  background: blue;
+}
   .hero-logo {
     float: left;
   }
