@@ -41,6 +41,9 @@
         </div>
       </div>
     </div>
+
+
+    
     <div class="view-home-footer">
       <div class="view-home-footer-section-1">
           <img src="../../assets/images/girl1.png" />

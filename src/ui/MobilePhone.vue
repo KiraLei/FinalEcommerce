@@ -3,16 +3,16 @@
     <p>
       Postula y obtén un 10% de descuento en el programa
     </p>
-    <InputNormalComponent class="mobile-phone-control" :placeholder="Nombre" />
-    <InputNormalComponent class="mobile-phone-control" :placeholder="Nombre" />
-    <InputNormalComponent class="mobile-phone-control" :placeholder="Nombre" />
-    <InputNormalComponent class="mobile-phone-control" :placeholder="Nombre" />
+    <InputNormalComponent class="mobile-phone-control" placeholder="Nombre" />
+    <InputNormalComponent class="mobile-phone-control" placeholder="Nombre" />
+    <InputNormalComponent class="mobile-phone-control" placeholder="Nombre" />
+    <InputNormalComponent class="mobile-phone-control" placeholder="Nombre" />
     <Button1Component class="mobile-phone-control" title="Quiero Postular" />
     
   </div>
 </template>
 
-<script lang="ts">
+<script  >
 import InputNormalComponent from "./InputNormal.vue";
 import Button1Component from "./Button1.vue";
 import Vue from "vue";
@@ -22,6 +22,11 @@ export default Vue.extend({
   components: {
     InputNormalComponent,
     Button1Component,
+  },
+   data() {
+    return {
+      nombre: "nombre",
+    };
   },
 });
 </script>

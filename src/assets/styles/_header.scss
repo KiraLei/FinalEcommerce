@@ -1,7 +1,13 @@
+@import "globals";
 .header {
-  max-width: 100%;
+  // max-width: 100%;
   height: 60px;
-  background-color: #000425;
+  background-color: $color-dark-blue;
+  // position: absolute;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
 .icons {
@@ -30,5 +36,42 @@
   .header {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+.menu-principal {
+  // width: 100%;
+  // height: 100%;//calc(100vh -60px);
+  //background-color: $color-dark-blue;
+ // background-color: red;
+
+  position: fixed;
+  height: calc(100% - 60px);
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 60px;
+}
+
+.menu-principal-body {
+  background-color: $color-dark-blue;
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    li {
+      color: white;
+      font-weight: bolder;
+      font-size: 1.8rem;
+      p{
+        cursor: pointer;
+        &:hover{
+          color:purple;
+        }
+      }
+    }
   }
 }
