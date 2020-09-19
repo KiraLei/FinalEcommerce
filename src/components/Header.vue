@@ -3,7 +3,7 @@
     <div class="icons">
       <!-- LOGO -->
       <div>
-        <img src="@/assets/images/logo_pachaqtec.svg" class="logo" alt="logo" />
+        <img src="@/assets/images/logo.png" class="logo" alt="logo" />
       </div>
   
       <div>
