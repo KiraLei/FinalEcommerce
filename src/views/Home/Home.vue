@@ -43,18 +43,18 @@
     </div>
     <div class="view-home-footer">
       <div class="view-home-footer-section-1">
-          <img src="../../assets/images/girl1.png" />
+        <img src="../../assets/images/girl1.png" />
 
-          <div>
-            <p>Sé parte de la comunidad</p>
-            <span>
-              Programas virtuales para el desarrollo de habilidades de
-              programación a lo largo de todo el Stack tecnológico. Al finalizar
-              sabrás cómo crear una página web y desarrollar la lógica detrás del
-              funcionamiento de una aplicación, así como formar parte de una gran
-              comunidad de desarrolladores.
-            </span>
-          </div>
+        <div>
+          <p>Sé parte de la comunidad</p>
+          <span>
+            Programas virtuales para el desarrollo de habilidades de
+            programación a lo largo de todo el Stack tecnológico. Al finalizar
+            sabrás cómo crear una página web y desarrollar la lógica detrás del
+            funcionamiento de una aplicación, así como formar parte de una gran
+            comunidad de desarrolladores.
+          </span>
+        </div>
       </div>
 
       <div class="container">
@@ -75,10 +75,6 @@
 
       <div></div>
     </div>
-
-    <ButtonWhatsappComponent />
-
-    <FooterComponent />
   </div>
 </template>
 
@@ -86,15 +82,10 @@
 import CardComponent from "../../../src/ui/Card.vue";
 import MobilePhoneComponent from "../../../src/ui/MobilePhone.vue";
 import CardGreyComponent from "../../../src/ui/CardGrey.vue";
-import ButtonWhatsappComponent from "../../../src/ui/ButtonWhatsapp.vue";
-import FooterComponent from "../../../src/components/Footer.vue";
-
 export default {
   name: "Home",
   components: {
     CardComponent,
-    ButtonWhatsappComponent,
-    FooterComponent,
     CardGreyComponent,
     MobilePhoneComponent,
   },
