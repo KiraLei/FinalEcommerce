@@ -24,7 +24,6 @@
         <h4>¿Olvidaste tu contraseña?</h4>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -35,19 +34,19 @@ export default {
 </script>
 
 <style lang="scss" scoped >
-.auth-login{
+.auth-login {
+  width: 100%;
   height: 100%;
-  
   display: flex;
-  align-items: stretch;
 }
+
 .login {
   padding: 10px;
   margin-top: 50px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  background: red;
+  // background: red;
 }
 
 input {
@@ -82,6 +81,69 @@ h4 {
   line-height: 25px;
   text-decoration: underline;
 }
+
+#app {
+  width: 100%;
+  display: flex;
+}
+
+.app__hero {
+  width: 100%;
+  height: calc(100vh - 153px);
+  // background-color: #5640ff;
+  background-image: url(~@/assets/images/bannerlogin.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  .hero-logo {
+    float: left;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 40%;
+    right: 50px;
+    width: 342px;
+    // height: 134px;
+    // margin-top: 165px;
+    // float: right;
+    text-align: right;
+    color: #ffffff;
+    font-family: Poppins;
+    // display: none;
+  }
+
+  .hero-respaldo {
+    width: 232px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 420px;
+    text-align: left;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 600;
+    line-height: 17px;
+  }
+}
+.app__form {
+  background: #fff;
+  .nav {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    padding-bottom: 10px;
+    margin: 0;
+  }
+}
+}
+
 
 /*-----MOBILE-----*/
 
@@ -122,6 +184,7 @@ h4 {
 */
 /*-----DESKTOP-----*/
 
+/*
 @media screen and (min-width: 1024px) {
   #app {
     width: 100%;
@@ -130,8 +193,8 @@ h4 {
 
   .app__hero {
     width: 100%;
-    height: 100%;
-    padding: 24px 70px 30px 80px;
+    height: 100px;
+    // padding: 24px 70px 30px 80px;
     background-image: url(~@/assets/images/bannerlogin.png);
     object-fit: cover;
     background-origin: center;
@@ -152,6 +215,7 @@ h4 {
     text-align: right;
     color: #ffffff;
     font-family: Poppins;
+    display: none;
   }
 
   .hero-respaldo {
@@ -179,5 +243,5 @@ h4 {
       margin: 0;
     }
   }
-}
+}*/
 </style>
