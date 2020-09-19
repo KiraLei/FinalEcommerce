@@ -32,7 +32,7 @@
       </li>
     </ul>
     -->
-    <div style="margin-top:60px;">
+    <div style="margin-top:60px; flex-grow:1;">
        <router-view></router-view>
     </div>
    
@@ -59,5 +59,9 @@ export default {
 
 .app {
   width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
 }
 </style>
