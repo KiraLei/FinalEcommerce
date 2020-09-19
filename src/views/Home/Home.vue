@@ -2,13 +2,20 @@
   <div class="view-home">
     <div class="view-home-header">
       <div>
-        <img class="view-home-header-background" src="@/assets/images/banner2.png" />
+        <img
+          class="view-home-header-background"
+          src="@/assets/images/banner2.png"
+        />
 
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-8">
-              <p class="view-home-header-texto-1">¡Explota todo tu potencial tecnológico!</p>
-              <p class="view-home-header-texto-2">Con nuestros programas de especialización</p>
+              <p class="view-home-header-texto-1">
+                ¡Explota todo tu potencial tecnológico!
+              </p>
+              <p class="view-home-header-texto-2">
+                Con nuestros programas de especialización
+              </p>
             </div>
           </div>
         </div>
@@ -30,20 +37,24 @@
         </div>
         <div class="row">
           <div class="col">
-            <p class="view-home-body-texto-1 mb-4">Conoce nuestros Programas de Especialización</p>
+            <p class="view-home-body-texto-1 mb-4">
+              Conoce nuestros Programas de Especialización
+            </p>
           </div>
         </div>
 
         <div class="row">
           <div class="col-12 col-xl-8 d-flex flex-wrap justify-content-start">
-            <CardComponent class="m-2 w-md-100" v-for="obj in cards" v-bind:key="obj" />
+            <CardComponent
+              class="m-2 w-md-100"
+              v-for="obj in cards"
+              v-bind:key="obj"
+            />
           </div>
         </div>
       </div>
     </div>
 
-
-    
     <div class="view-home-footer">
       <div class="view-home-footer-section-1">
         <img src="../../assets/images/girl1.png" />
@@ -91,6 +102,38 @@ export default {
     CardComponent,
     CardGreyComponent,
     MobilePhoneComponent,
+  },
+  created() {
+    this.addTransparent();
+    window.addEventListener("scroll", this.scroll);
+  },
+  destroyed() {
+    this.removeTransparent();
+    window.removeEventListener("scroll", this.scroll);
+  },
+
+  methods: {
+    addTransparent() {
+      document
+        .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
+        .classList.add("header-background-transparent");
+    },
+    removeTransparent() {
+      document
+        .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
+        .classList.remove("header-background-transparent");
+    },
+
+    scroll() {
+      console.log(window.scrollY);
+
+      if (window.scrollY > 200) {
+         this.removeTransparent();
+      } else {
+      
+         this.addTransparent();
+      }
+    },
   },
   data() {
     return {
