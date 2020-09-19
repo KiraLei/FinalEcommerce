@@ -33,7 +33,7 @@ export default Vue.extend({
   background-position: center;
   background-size: cover;
   .card-background {
-    width: 344px;
+    width: 100%;
     height: 320px;
     padding: 20px;
     border-radius: 10px;
