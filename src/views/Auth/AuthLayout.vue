@@ -1,5 +1,5 @@
 <template>
-  <div class="auth-layout">
+  <div class="auth-layout" >
     <!-- <img src="https://picsum.photos/945/660" alt />-->
 
     <div class="container-fluid">
@@ -71,9 +71,7 @@ export default {
   name: "AuthLayout",
 
   created() {
-    document
-      .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
-      .classList.toggle("d-none");
+    //  this.addTransparent();
 
     document
       .getElementById("12f40b7f-243c-4e4c-8c9f-53a84445cf88")
@@ -83,9 +81,7 @@ export default {
   },
 
   destroyed() {
-    document
-      .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
-      .classList.toggle("d-none");
+    
 
     document
       .getElementById("12f40b7f-243c-4e4c-8c9f-53a84445cf88")
@@ -93,7 +89,16 @@ export default {
 
     //  document.getElementById("principalContainer").style.margin='60px';
   },
+ 
 };
 </script>
 
-<style></style>
+<style lang='scss'>
+
+.auth-layout{
+
+ height: 500px;
+
+}
+
+</style>
