@@ -4,12 +4,12 @@ export default {
   component: () => import("./AuthLayout.vue"),
   children: [
     {
-      path: "login",
+      path: "/login",
       name: "auth-login",
       component: () => import("./AuthLogin.vue"),
     },
     {
-      path: "register",
+      path: "/register",
       name: "auth-register",
       component: () => import("./AuthRegister.vue"),
     },
