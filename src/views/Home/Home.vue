@@ -40,7 +40,18 @@
 
         <div class="row">
           <div class="col-12 col-xl-8 d-flex flex-wrap justify-content-start">
-            <CardComponent class="m-2 w-md-100" v-for="obj in cards" v-bind:key="obj" />
+            <CardComponent
+              class="m-2 w-md-100"
+              v-for="obj in cards"
+              v-bind:key="obj"
+              v-bind:imgSrc="'https://picsum.photos/1000/1000?random=' + obj"
+              v-bind:title="'curso numero ' + obj"
+              v-bind:description="
+                'descripcion del curso numero ' +
+                obj +
+                ', es muy interesante, animate a comprarlo'
+              "
+            />
           </div>
         </div>
       </div>
@@ -117,8 +128,6 @@ export default {
     },
 
     scroll() {
-      console.log(window.scrollY);
-
       if (window.scrollY > 200) {
         this.removeTransparent();
       } else {

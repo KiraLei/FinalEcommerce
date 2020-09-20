@@ -21,10 +21,32 @@
       bottom: 160px;
     }
 
+    .view-home-header-texto-1-2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: white;
+      position: absolute;
+      bottom: 160px;
+      background-color: #ff1558;
+      text-transform: uppercase;
+      padding: 5px 5px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center ;
+      justify-content: center;
+    }
+
     .view-home-header-texto-2 {
       @include font-big-2;
       position: absolute;
       bottom: 80px;
+    }
+    .view-home-header-texto-2-2 {
+     font-size: 4rem;
+     font-weight: 600;
+      position: absolute;
+      bottom: 80px;
+      color:white;
     }
   }
   .view-home-body-texto-1 {
