@@ -32,7 +32,7 @@
       </li>
     </ul>
     -->
-    <div style="margin-top:60px; flex-grow:1;">
+    <div style="margin-top:60px; flex-grow:1; "    id='principalContainer'>
       <router-view></router-view>
     </div>
 
