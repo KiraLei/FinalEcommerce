@@ -131,6 +131,7 @@ h4 {
 .app__form {
   width: 420px;
   background: #fff;
+  text-align: center;
   // padding: 40PX;
   .nav_login_register {
     margin: auto;
@@ -140,8 +141,7 @@ h4 {
     justify-content: space-around;
     align-items: center;
     hr {
-      background-color: Blue;
-      height: 1px;
+      border-top: 2px solid rgba(0, 0, 0, 0.5);
       border: 0;
       color: blue;
     }
@@ -152,7 +152,11 @@ h4 {
       padding-bottom: 15px;
       text-align: center;
       width: 173px;
+      text-decoration: none;
       border-bottom: 3px solid #000;
+    }
+    .input_register{
+      border-bottom: none;
     }
     // a {
     //   padding-bottom: 10px;
@@ -201,66 +205,5 @@ h4 {
   }
 }
 */
-/*-----DESKTOP-----*/
 
-/*
-@media screen and (min-width: 1024px) {
-  #app {
-    width: 100%;
-    display: flex;
-  }
-
-  .app__hero {
-    width: 100%;
-    height: 100px;
-    // padding: 24px 70px 30px 80px;
-    background-image: url(~@/assets/images/bannerlogin.png);
-    object-fit: cover;
-    background-origin: center;
-    background-repeat: no-repeat;
-  }
-.app__form{
-  background: blue;
-}
-  .hero-logo {
-    float: left;
-  }
-
-  .hero-text {
-    width: 342px;
-    height: 134px;
-    margin-top: 165px;
-    float: right;
-    text-align: right;
-    color: #ffffff;
-    font-family: Poppins;
-    display: none;
-  }
-
-  .hero-respaldo {
-    width: 232px;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 420px;
-    text-align: left;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-weight: 600;
-    line-height: 17px;
-  }
-
-  .nav {
-    width: 100%;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    a {
-      padding-bottom: 10px;
-      margin: 0;
-    }
-  }
-}*/
 </style>

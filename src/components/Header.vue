@@ -3,7 +3,7 @@
     <div class="icons">
       <!-- LOGO -->
       <div>
-        <img src="@/assets/images/iconoPachaqtec.png" class="logo" alt="logo" />
+        <img src="@/assets/images/iconoPachaqtec.png" v-on:click="menu_home" class="logo" alt="logo" />
       </div>
 
       <div>
