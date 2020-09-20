@@ -125,7 +125,7 @@ export default Vue.extend({
     menu_login: function () {
       this.showMenuFalse();
       this.$router.push({
-        path: "/auth/login",
+        path: "/login",
       });
     },
 

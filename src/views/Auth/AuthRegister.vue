@@ -1,5 +1,6 @@
 <template>
-  <div class="tab-pane" id="Registration">
+ <!-- class="tab-pane"--> 
+  <div  id="Registration">
     <form role="form" class="form-horizontal">
       <div class="row">
         <div class="col-xl-12">
