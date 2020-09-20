@@ -25,6 +25,7 @@ export default Vue.extend({
 
   methods: {
     verMas() {
+
       this.$router.push({
         path: "/:product",
         query: {
@@ -33,6 +34,7 @@ export default Vue.extend({
           description: this.description,
         },
       });
+      
     },
   },
 });
