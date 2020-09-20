@@ -41,6 +41,30 @@
 .view-home-body{
   background-color:#F2F3F5;
 }
+.animation{
+  position: relative;
+  .updown{
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: UpDown;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes UpDown{
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(30px);
+    }
+  }
+}
+
+
 .view-home-footer-section-1 {
   position: relative;
   height: 300px;

@@ -11,7 +11,7 @@
           v-if="!showMenu"
           src="@/assets/images/car_shoping.svg"
           class="cart"
-          alt="Logotipo"
+          alt="car shoping"
         />
 
         <img
@@ -19,7 +19,7 @@
           src="@/assets/images/menu.svg"
           v-on:click="menuIconClick"
           class="menuicon"
-          alt="Logotipo"
+          alt="menu nav"
         />
 
         <p

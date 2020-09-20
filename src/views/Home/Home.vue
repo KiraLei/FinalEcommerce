@@ -30,6 +30,10 @@
           </div>
         </div>
 
+        <div class="animation">
+          <img src="../../assets/images/updown.png" class="updown" alt="" />
+        </div>
+
         <div class="row">
           <div class="col my-5">
             <img src="../../assets/images/respaldo.png" />
@@ -63,10 +67,10 @@
           <p>Sé parte de la comunidad</p>
           <span>
             Programas virtuales para el desarrollo de habilidades de
-            programación a lo largo de todo el Stack tecnológico. <br><br> Al finalizar
-            sabrás cómo crear una página web y desarrollar la lógica detrás del
-            funcionamiento de una aplicación, así como formar parte de una gran
-            comunidad de desarrolladores.
+            programación a lo largo de todo el Stack tecnológico. <br /><br />
+            Al finalizar sabrás cómo crear una página web y desarrollar la
+            lógica detrás del funcionamiento de una aplicación, así como formar
+            parte de una gran comunidad de desarrolladores.
           </span>
         </div>
       </div>
@@ -128,10 +132,9 @@ export default {
       console.log(window.scrollY);
 
       if (window.scrollY > 200) {
-         this.removeTransparent();
+        this.removeTransparent();
       } else {
-      
-         this.addTransparent();
+        this.addTransparent();
       }
     },
   },

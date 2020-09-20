@@ -1,5 +1,6 @@
 <template>
   <div class="view-debit-card">
+    <h2>VISTA DEBIT PAYMENT</h2>
     <div class="wrapper">
       <div class="box-runway">
         <div class="title_inline">
@@ -17,45 +18,58 @@
         </div>
 
         <div class="container_pay">
-          <p class="sub-title">Pasos a seguir:</p>
-          <p class="paragraph">Enviaremos un código de pago CIP a tu correo electrónico, con el cual podrás pagar de la siguiente manera:</p>
+          <p class="sub-title">Depósito Pago Efectivo</p>
+          <div class="box-inputs">
+            <input
+              class="input-n"
+              type="text"
+              placeholder="Documento de indentidad"
+            />
+            <input
+              class="input-n"
+              type="text"
+              placeholder="Correo electrónico"
+            />
+          </div>
         </div>
 
         <div class="container_credit_card">
-          <p class="sub-title">Banca por internet y móvil:</p>
-          <p class="paragraph">Paga por internet vía transferencia desde el aplicativo móvil o web de tu banco de preferencia.</p>
+          <p class="sub-title">Ingresa la información de tu tarjeta</p>
           <div class="container-left-right">
-            <img src="@/assets/images/bank_icons/presencial-1-bbva.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-2-bcp.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-3-ibk.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-4-scotiabank.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-5-banbif.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-6-arequipa.png" alt />
+            <div class="container-left">
+              <input class="input-n" type="text" placeholder="Franco Torres" />
+
+              <div class="box-inputs-tres">
+                <input class="input-n" type="text" placeholder="Mes" />
+                <input class="input-n" type="text" placeholder="Año" />
+                <input class="input-n" type="text" placeholder="cvc/cvv" />
+              </div>
+            </div>
+
+            <div class="box-inputs">
+              <input
+                class="input-n"
+                type="text"
+                placeholder="Correo electrónico"
+              />
+            </div>
           </div>
         </div>
 
-        <div class="box-dues">
-          <p class="sub-title">Agencias y agentes:</p>
-          <p class="paragraph">Realiza depósitos en efectivo en agencias bancarias, agentes o bodegas a nivel nacional.</p>
-          <div class="box-inputs-dues">
-            <img src="@/assets/images/bank_icons/presencial-1-bbva.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-2-bcp.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-3-ibk.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-4-scotiabank.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-5-banbif.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-6-arequipa.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-7-kasnet.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-8-wester.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-9-fullcarga.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-10-tambo.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-11-money.png" alt />
-            <img src="@/assets/images/bank_icons/presencial-12-disashop.png" alt />
-          </div>
-        </div>
-        <div class>
+        <div class="container_on_of">
           <p class="sub-title">Solicitar factura</p>
           <ButtonOnOffComponent />
         </div>
+        <div class="container_pay">
+          <div class="box-inputs">
+            <button class="input-n">Razón Social</button>
+            <button class="input-n">Número de RUC</button>
+            <button class="input-n w-full">
+              Dirección del domicilio fiscal
+            </button>
+          </div>
+        </div>
+
         <div class="box-button">
           <button class="btn_static center">Finalizar compra</button>
         </div>
@@ -99,7 +113,11 @@
             </div>
           </div>
 
-          <input class="input-n" type="text" placeholder="Agrega un código de descuento" />
+          <input
+            class="input-n"
+            type="text"
+            placeholder="Agrega un código de descuento"
+          />
           <hr />
           <div class="box-pay">
             <span>Precio final</span>
@@ -123,7 +141,7 @@ export default {
 </script>
 
 <style>
-.paragraph{
+.paragraph {
   font-weight: normal;
 }
 </style>
