@@ -57,6 +57,11 @@
           </div>
         </div>
         
+        <div class="container_on_of">
+          <p class="sub-title">Solicitar factura</p>
+          <ButtonOnOffComponent />
+        </div>
+
         <div class="box-button">
           <button class="btn_static center">Finalizar compra</button>
         </div>
@@ -113,8 +118,12 @@
 </template>
 
 <script>
+import ButtonOnOffComponent from "../../../src/ui/ButtonOnOff.vue";
 export default {
   name: "CreditCard",
+  components: {
+    ButtonOnOffComponent,
+  },
 };
 </script>
 <style lang="scss">

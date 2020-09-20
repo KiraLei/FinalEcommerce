@@ -6,19 +6,17 @@
 @import "view_home";
 @import "checkout";
 @import "creditcard";
+@import "cash_payment";
 @import "view_home";
 @import "input_normal";
 @import "btn_static";
 @import "btn_animate";
+@import "btn_on_off"; //boton de encendido y apagado de la pagina pago en efectivo
 @import "header";
 @import "footer";
 @import "globals";
 
-
-
-
-
-.roboto{
+.roboto {
   color: red;
   font-family: $font-family;
   font-size: 2rem;

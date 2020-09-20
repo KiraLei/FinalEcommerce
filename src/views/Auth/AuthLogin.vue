@@ -13,11 +13,16 @@
     </div>
 
     <div class="app__form">
-      <div class="nav">
-        <router-link class="login" to="/login">Login</router-link>
-        <router-link class="register" to="/register">Register</router-link>
+      <div class="nav_login_register">
+        <router-link class="input_login" to="/login"
+          >Iniciar Sesión</router-link
+        >
+        <router-link class="input_register" to="/register"
+          >Registrarse</router-link
+        >
       </div>
-      <div class="login">
+      <hr />
+      <div class="box_login">
         <input type="text" placeholder="Correo Electrónico" />
         <input type="text" placeholder="Contraseña" />
         <button>Ingresar</button>
@@ -33,21 +38,20 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped >
+<style lang="scss" scoped>
 .auth-login {
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
   display: flex;
 }
 
-.login {
-  padding: 10px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  // background: red;
-}
+// .login {
+//   padding: 10px;
+//   margin-top: 50px;
+//   margin-bottom: 20px;
+//   display: flex;
+//   flex-direction: column;
+// }
 
 input {
   margin: 0 auto;
@@ -82,15 +86,14 @@ h4 {
   text-decoration: underline;
 }
 
-#app {
-  width: 100%;
-  display: flex;
-}
+// #app {
+//   width: 100%;
+//   display: flex;
+// }
 
 .app__hero {
   width: 100%;
   height: calc(100vh - 153px);
-  // background-color: #5640ff;
   background-image: url(~@/assets/images/bannerlogin.png);
   object-fit: cover;
   background-size: cover;
@@ -106,13 +109,9 @@ h4 {
     top: 40%;
     right: 50px;
     width: 342px;
-    // height: 134px;
-    // margin-top: 165px;
-    // float: right;
     text-align: right;
     color: #ffffff;
     font-family: Poppins;
-    // display: none;
   }
 
   .hero-respaldo {
@@ -128,22 +127,42 @@ h4 {
     line-height: 17px;
   }
 }
+// FORMULARIO DE LOGIN
 .app__form {
+  width: 420px;
   background: #fff;
-  .nav {
-  width: 100%;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  a {
-    padding-bottom: 10px;
-    margin: 0;
+  // padding: 40PX;
+  .nav_login_register {
+    margin: auto;
+    width: 100%;
+    padding: 20px 37px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    hr {
+      background-color: Blue;
+      height: 1px;
+      border: 0;
+      color: blue;
+    }
+    .input_login,
+    .input_register {
+      color: #000;
+      font-weight: bold;
+      padding-bottom: 15px;
+      text-align: center;
+      width: 173px;
+      border-bottom: 3px solid #000;
+    }
+    // a {
+    //   padding-bottom: 10px;
+    //   margin: 0;
+    //   background: red;
+    // }
+  }
+  .box_login {
   }
 }
-}
-
 
 /*-----MOBILE-----*/
 
