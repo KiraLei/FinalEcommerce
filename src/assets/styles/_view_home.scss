@@ -2,10 +2,9 @@
 @import "globals";
 
 .view-home {
-   margin-top: -60px;
+  margin-top: -60px;
   .view-home-header {
     position: relative;
-   
 
     .view-home-header-background {
       height: 500px;
@@ -15,17 +14,39 @@
       background-size: cover;
       object-fit: cover;
     }
-   
+
     .view-home-header-texto-1 {
       @include font-big-1;
       position: absolute;
       bottom: 160px;
     }
 
+    .view-home-header-texto-1-2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: white;
+      position: absolute;
+      bottom: 160px;
+      background-color: #ff1558;
+      text-transform: uppercase;
+      padding: 5px 5px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center ;
+      justify-content: center;
+    }
+
     .view-home-header-texto-2 {
       @include font-big-2;
       position: absolute;
       bottom: 80px;
+    }
+    .view-home-header-texto-2-2 {
+     font-size: 4rem;
+     font-weight: 600;
+      position: absolute;
+      bottom: 80px;
+      color:white;
     }
   }
   .view-home-body-texto-1 {
@@ -38,37 +59,48 @@
     @include font-big-2;
   }
 }
-.view-home-body{
-  background-color:#F2F3F5;
+
+.view-home-product-description{
+  color: $color-dark-blue;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+
 }
-.animation{
+.view-home-product-texto-1 {
+  color: $color-dark-blue;
+  font-family: $font-family;
+  font-size: 2rem;
+}
+.view-home-body {
+  background-color: #f2f3f5;
+}
+.animation {
   position: relative;
-  .updown{
+  .updown {
     box-sizing: border-box;
     position: absolute;
     top: 50%;
     left: 50%;
     animation-name: UpDown;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-  @keyframes UpDown{
-    from{
-        transform: translateY(10px);
+  @keyframes UpDown {
+    from {
+      transform: translateY(10px);
     }
-    to{
-        transform: translateY(30px);
+    to {
+      transform: translateY(30px);
     }
   }
 }
 
-
 .view-home-footer-section-1 {
   position: relative;
   height: 300px;
-   ;
   background: transparent linear-gradient(180deg, #3015fd 0%, #5640ff 100%) 0%
     0% no-repeat padding-box;
   opacity: 1;
@@ -93,7 +125,6 @@
   margin-bottom: 150px;
 }
 
-
 @media screen and (max-width: 900px) {
   .view-home-footer-section-1 {
     margin-top: 250px;
@@ -102,7 +133,7 @@
       width: 80%;
       margin: auto;
       padding-top: 140px;
-      span{
+      span {
         font-size: 0.8rem;
       }
     }

@@ -48,9 +48,9 @@
           <li>
             <p v-on:click="menu_home">HOME</p>
           </li>
-          <li>
+        <!--  <li>
             <p v-on:click="menu_detalle">DETALLE HOME</p>
-          </li>
+          </li>-->
           <li>
             <p v-on:click="menu_pagoCheckout">PAGO / CHECKOUT</p>
           </li>
