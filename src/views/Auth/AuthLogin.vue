@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapState } from "vuex";
 export default {
   name: "AuthLogin",
   data() {
@@ -71,6 +71,19 @@ export default {
       username: "",
       password: "",
     };
+  },
+  watch: {
+    isLogin(value) {
+      if (value) {
+        this.$router.replace("/pago/checkout");
+      }
+      console.log("value", value);
+    },
+  },
+  computed: {
+    ...mapState({
+      isLogin: (state) => state.AuthStore.isLogin,
+    }),
   },
   methods: {
     ...mapActions({
@@ -86,6 +99,7 @@ export default {
       });
     },
   },
+  mounted() {},
 };
 </script>
 

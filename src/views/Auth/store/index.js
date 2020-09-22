@@ -19,18 +19,29 @@ export default {
   actions: {
     async postLogin({ commit }, payload) {
       try {
-        const login = await fetch("https://backendhackatonfinal.herokuapp.com/loginCliente/", {
-          method: "POST",
-          body: JSON.stringify(payload),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }).then((response) => response.json());
-        commit("SET_ERROR_LOADED", false);
-        commit("SET_USER", login);
-        commit("SET_IS_LOGIN", true);
+        const login = await fetch(
+          "https://backendhackatonfinal.herokuapp.com/loginCliente/",
+          {
+            method: "POST",
+            body: JSON.stringify(payload),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        ).then((response) => response.json());
+        console.log("login", login);
+        if (!login.error) {
+          commit("SET_ERROR_LOADED", false);
+          commit("SET_USER", login);
+          commit("SET_IS_LOGIN", true);
+        } else {
+          console.log('entro acaaaa')
+          commit("SET_ERROR_LOADED", true);
+          commit("SET_IS_LOGIN", false);
+          alert("Credenciales incorrectas!!");
+        }
       } catch (e) {
-        commit("SET_ERROR_LOADED", true);
+        console.log("error", e);
       }
     },
     async postRegister({ commit }, payload) {
