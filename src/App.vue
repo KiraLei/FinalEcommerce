@@ -53,6 +53,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss">
 @import "./assets/styles/main.scss";
 @import "~bootstrap/dist/css/bootstrap.css";
