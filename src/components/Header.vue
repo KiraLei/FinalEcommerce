@@ -3,16 +3,24 @@
     <div class="icons">
       <!-- LOGO -->
       <div>
-        <img src="@/assets/images/iconoPachaqtec.png" v-on:click="menu_home" class="logo" alt="logo" />
+        <img
+          src="@/assets/images/iconoPachaqtec.png"
+          v-on:click="menu_home"
+          class="logo"
+          alt="logo"
+        />
       </div>
 
-      <div>
-        <img
-          v-if="!showMenu"
-          src="@/assets/images/car_shoping.svg"
-          class="cart"
-          alt="car shoping"
-        />
+      <div class="car-main">
+        <div class="total-cart">
+          <img
+            v-if="!showMenu"
+            src="@/assets/images/car_shoping.svg"
+            class="cart"
+            alt="car shoping"
+          />
+          <span>{{totalProducts.length}}</span>
+        </div>
 
         <img
           v-if="!showMenu"
@@ -22,47 +30,33 @@
           alt="menu nav"
         />
 
-        <p
-          class="menu-principal-close"
-          v-if="showMenu"
-          v-on:click="showMenuFalse"
-        >
-          X
-        </p>
+        <p class="menu-principal-close" v-if="showMenu" v-on:click="showMenuFalse">X</p>
       </div>
     </div>
-    <div
-      v-if="showMenu"
-      id="divMenuPrincipal"
-      ref="divMenuPrincipal"
-      class="menu-principal"
-    >
+    <div v-if="showMenu" id="divMenuPrincipal" ref="divMenuPrincipal" class="menu-principal">
       <div class="menu-principal-body">
         <ul>
           <li>
-            <p v-on:click="menu_login">LOGIN</p>
-          </li>
-          <li>
-            <p v-on:click="menu_register">REGISTER</p>
-          </li>
-          <li>
             <p v-on:click="menu_home">HOME</p>
           </li>
-        <!--  <li>
+          <li>
+            <p v-on:click="menu_login">LOGIN</p>
+          </li>
+          <!-- <li>
+            <p v-on:click="menu_register">REGISTER</p> Se procedio a desactivar porque en el login ya esta imprementado el registro
+          </li>-->
+
+          <!--  <li>
             <p v-on:click="menu_detalle">DETALLE HOME</p>
           </li>-->
           <li>
             <p v-on:click="menu_pagoCheckout">PAGO / CHECKOUT</p>
           </li>
           <li>
-            <p v-on:click="menu_pagoTarjetaCredito">
-              PAGO / TARJETA DE CREDITO
-            </p>
+            <p v-on:click="menu_pagoTarjetaCredito">PAGO / TARJETA DE CREDITO</p>
           </li>
           <li>
-            <p v-on:click="menu_tarjetaTarjetaDebito">
-              PAGO / TARJETA DE DEBITO
-            </p>
+            <p v-on:click="menu_tarjetaTarjetaDebito">PAGO / TARJETA DE DEBITO</p>
           </li>
           <li>
             <p v-on:click="menu_pagoEfectivo">PAGO / PAGO EFECTIVO</p>
@@ -79,6 +73,7 @@
 
 <script>
 import Vue from "vue";
+import { mapState } from "vuex";
 import FooterComponent from "./Footer.vue";
 
 export default Vue.extend({
@@ -91,6 +86,11 @@ export default Vue.extend({
       showMenu: false,
       existTransparent: false,
     };
+  },
+  computed: {
+    ...mapState({
+      totalProducts: (state) => state.HomeStore.totalProducts,
+    }),
   },
   methods: {
     menuIconClick: function () {
@@ -187,4 +187,28 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.car-main {
+  display: flex;
+  .total-cart {
+    position: relative;
+    span {
+      position: absolute;
+      right: 35px;
+      text-align: center;
+      border-radius: 100%;
+      color: #fff;
+      background: #f00;
+      box-sizing: border-box;
+      padding: 2px;
+      width: 20px;
+      height: 20px;
+      font-size: 11px;
+    }
+    
+  }
+  .menuicon{
+      padding:0 15px 7px 0;
+    }
+}
+</style>

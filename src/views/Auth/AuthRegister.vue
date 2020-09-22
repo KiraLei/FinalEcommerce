@@ -1,7 +1,7 @@
 <template>
- <!-- class="tab-pane"--> 
-  <div  id="Registration">
-    <form role="form" class="form-horizontal">
+  <!-- class="tab-pane"-->
+  <div id="Registration">
+    <form @submit.prevent="handleSubmit" role="form" class="form-horizontal">
       <div class="row">
         <div class="col-xl-12">
           <div class="row text-center sign-with">
@@ -27,23 +27,55 @@
 
       <div class="form-group">
         <div class="col-md-12 pt-4">
-          <input type="text" class="form-control" placeholder="Nombres y apellidos" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            v-model.trim="$v.username.$model"
+          />
         </div>
+        <div class="error" v-if="$v.username.$error">Este campo es requerido</div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-12 pt-4">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombres y apellidos"
+            v-model.trim="$v.nombre.$model"
+          />
+        </div>
+        <div class="error" v-if="$v.nombre.$error">Este campo es requerido</div>
       </div>
 
       <div class="form-group">
         <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="Correo electrónico" />
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Correo electrónico"
+            v-model.trim="$v.email.$model"
+          />
         </div>
+        <div class="error" v-if="$v.email.$error">Este campo es requerido</div>
       </div>
 
       <div class="form-group">
         <div class="col-sm-12">
-          <input type="password" class="form-control" id="password" placeholder="Contraseña" />
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Contraseña"
+            v-model.trim="$v.password.$model"
+          />
         </div>
+        <div class="error" v-if="$v.password.$error">Este campo es requerido</div>
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
         <div class="col-sm-12">
           <input
             type="password"
@@ -52,7 +84,7 @@
             placeholder="Repite contraseña"
           />
         </div>
-      </div>
+      </div>-->
 
       <div class="form-group terminos">
         <div class="col-sm-12 orden">
@@ -64,7 +96,7 @@
 
       <div class="form-group">
         <div class="col-sm-12">
-          <button type="button" class="btn boton-form btn-sm">Registrarse</button>
+          <button class="btn boton-form btn-sm">Registrarse</button>
         </div>
       </div>
     </form>
@@ -72,10 +104,55 @@
 </template>
 
 <script>
+import { required, email } from "vuelidate/lib/validators";
+
+import { mapActions } from "vuex";
 export default {
   name: "AuthRegister",
+  data() {
+    return {
+      username: "",
+      nombre: "",
+      email: "",
+      password: "",
+    };
+  },
+  validations: {
+    username: {
+      required,
+    },
+    nombre: {
+      required,
+    },
+    email: {
+      required,
+      email,
+    },
+    password: {
+      required,
+    },
+  },
+  methods: {
+    ...mapActions({
+      postRegister: "AuthStore/postRegister",
+    }),
+    handleSubmit() {
+      console.log("this.$v", this.$v);
+      this.$v.$touch();
+
+      this.postRegister({
+        username: this.username,
+        nombre: this.nombre,
+        email: this.email,
+        password: this.password,
+      });
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+.error {
+  border: 1px solid #f00;
+}
 </style>

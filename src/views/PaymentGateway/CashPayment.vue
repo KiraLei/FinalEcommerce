@@ -1,6 +1,5 @@
 <template>
   <div class="view-cash-payment">
-      <h2>VISTA CASH PAYMENT</h2>
       <div class="wrapper">
       <div class="box-runway">
         <div class="title_inline">

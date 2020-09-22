@@ -23,15 +23,27 @@
       </div>
     </div>
 
-    <form role="form" class="form-horizontal">
+    <form @submit.prevent="handleSubmit" role="form" class="form-horizontal">
       <div class="form-group">
         <div class="col-sm-12 pt-4">
-          <input type="email" class="form-control" id="email1" placeholder="Email" />
+          <input
+            type="text"
+            class="form-control"
+            id="email1"
+            placeholder="Username"
+            v-model="username"
+          />
         </div>
       </div>
       <div class="form-group">
         <div class="col-sm-12">
-          <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+            v-model="password"
+          />
         </div>
       </div>
 
@@ -51,8 +63,43 @@
 </template>
 
 <script>
+import { mapActions, mapState } from "vuex";
 export default {
   name: "AuthLogin",
+  data() {
+    return {
+      username: "",
+      password: "",
+    };
+  },
+  watch: {
+    isLogin(value) {
+      if (value) {
+        this.$router.replace("/pago/checkout");
+      }
+      console.log("value", value);
+    },
+  },
+  computed: {
+    ...mapState({
+      isLogin: (state) => state.AuthStore.isLogin,
+    }),
+  },
+  methods: {
+    ...mapActions({
+      postLogin: "AuthStore/postLogin",
+    }),
+    handleSubmit() {
+      // console.log("this.$v", this.$v);
+      // this.$v.$touch();
+
+      this.postLogin({
+        username: this.username,
+        password: this.password,
+      });
+    },
+  },
+  mounted() {},
 };
 </script>
 

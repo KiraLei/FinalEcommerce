@@ -15,7 +15,7 @@ export default Vue.extend({
 
 <style lang="scss">
 .input-normal-input-container {
-  width: 250px;
+  width: 100%;
   input {
     width: 100%;
     outline: none;
@@ -25,10 +25,10 @@ export default Vue.extend({
     color: #111;
     box-sizing: border-box;
     border-radius: 5px;
-    &::placeholder { 
+    &::placeholder {
       color: #111;
       font-size: 0.8rem;
-      }
+    }
   }
   input:valid {
     border-color: #5640ff;

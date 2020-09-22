@@ -1,6 +1,5 @@
 <template>
   <div class="view-debit-card">
-    <h2>VISTA DEBIT PAYMENT</h2>
     <div class="wrapper">
       <div class="box-runway">
         <div class="title_inline">
