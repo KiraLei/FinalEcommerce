@@ -18,8 +18,8 @@ export default Vue.extend({
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   border: none;
   color: #fff;
   background: #00d56b;
@@ -30,5 +30,17 @@ export default Vue.extend({
   img {
     width: 30px;
   }
+}
+@media (max-width: 500px) {
+.whatsapp{
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  bottom: 10px;
+  right: 10px;
+  img{
+    width: 25px;
+  }
+}
 }
 </style>

@@ -11,7 +11,7 @@
         />
       </div>
 
-      <div>
+      <div class="car-main">
         <div class="total-cart">
           <img
             v-if="!showMenu"
@@ -37,14 +37,15 @@
       <div class="menu-principal-body">
         <ul>
           <li>
-            <p v-on:click="menu_login">LOGIN</p>
-          </li>
-          <li>
-            <p v-on:click="menu_register">REGISTER</p>
-          </li>
-          <li>
             <p v-on:click="menu_home">HOME</p>
           </li>
+          <li>
+            <p v-on:click="menu_login">LOGIN</p>
+          </li>
+          <!-- <li>
+            <p v-on:click="menu_register">REGISTER</p> Se procedio a desactivar porque en el login ya esta imprementado el registro
+          </li>-->
+
           <!--  <li>
             <p v-on:click="menu_detalle">DETALLE HOME</p>
           </li>-->
@@ -187,20 +188,27 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.total-cart {
-  position: relative;
-
-  span {
-    position: absolute;
-    right: 0;
-    text-align: center;
-    border-radius: 100%;
-    color: #fff;
-    background: #f00;
-    box-sizing: border-box;
-    width: 20px;
-    height: 20px;
-    font-size: 11px;
+.car-main {
+  display: flex;
+  .total-cart {
+    position: relative;
+    span {
+      position: absolute;
+      right: 35px;
+      text-align: center;
+      border-radius: 100%;
+      color: #fff;
+      background: #f00;
+      box-sizing: border-box;
+      padding: 2px;
+      width: 20px;
+      height: 20px;
+      font-size: 11px;
+    }
+    
   }
+  .menuicon{
+      padding:0 15px 7px 0;
+    }
 }
 </style>
