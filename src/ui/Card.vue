@@ -34,8 +34,9 @@ export default Vue.extend({
       });
     },
     addCard() {
-      this.$emit('addcard')
-    }
+      this.$emit("addcard");
+    },
+    
   },
 });
 </script>
@@ -61,7 +62,7 @@ export default Vue.extend({
     top: 10px;
     border-radius: 4px;
     cursor: pointer;
-    z-index:9;
+    z-index: 9;
   }
 
   .card-card-background-img {

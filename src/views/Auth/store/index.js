@@ -19,7 +19,7 @@ export default {
   actions: {
     async postLogin({ commit }, payload) {
       try {
-        const login = await fetch("http://localhost:3000/login", {
+        const login = await fetch("https://backendhackatonfinal.herokuapp.com/loginCliente/", {
           method: "POST",
           body: JSON.stringify(payload),
           headers: {
@@ -35,7 +35,7 @@ export default {
     },
     async postRegister({ commit }, payload) {
       try {
-        await fetch("http://localhost:3000/register", {
+        await fetch("https://backendhackatonfinal.herokuapp.com/cliente/", {
           method: "POST",
           body: JSON.stringify(payload),
           headers: {
