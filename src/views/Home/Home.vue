@@ -40,18 +40,18 @@
 
         <div class="row">
           <div class="col-12 col-xl-8 d-flex flex-wrap justify-content-start">
-            <CardComponent
-              class="m-2 w-md-100"
-              v-for="obj in cards"
-              v-bind:key="obj"
-              v-bind:imgSrc="'https://picsum.photos/1000/1000?random=' + obj"
-              v-bind:title="'curso numero ' + obj"
-              v-bind:description="
-                'descripcion del curso numero ' +
-                obj +
-                ', es muy interesante, animate a comprarlo'
-              "
-            />
+            <template v-if="!!products.length">
+              <CardComponent
+                class="m-2 w-md-100"
+                v-for="product in products"
+                v-bind:key="product.id"
+                v-bind:imgSrc="product.thumb"
+                v-bind:title="product.nombre"
+                v-bind:description="product.description"
+                v-on:addcard="addCard(product)"
+              />
+            </template>
+            <template v-else>No hay datos aun</template>
           </div>
         </div>
       </div>
@@ -96,6 +96,7 @@
 </template>
 
 <script>
+import { mapState, mapActions } from "vuex";
 import CardComponent from "../../../src/ui/Card.vue";
 import MobilePhoneComponent from "../../../src/ui/MobilePhone.vue";
 import CardGreyComponent from "../../../src/ui/CardGrey.vue";
@@ -110,12 +111,23 @@ export default {
     this.addTransparent();
     window.addEventListener("scroll", this.scroll);
   },
-  destroyed() {
-    this.removeTransparent();
-    window.removeEventListener("scroll", this.scroll);
+  data() {
+    return {
+      cards: [],
+      cards2: [1, 2, 3],
+    };
   },
-
+  watch: {},
+  computed: {
+    ...mapState({
+      products: (state) => state.HomeStore.products,
+    }),
+  },
   methods: {
+    ...mapActions({
+      getProducts: "HomeStore/getProducts",
+      addProduct: "HomeStore/addProduct",
+    }),
     addTransparent() {
       document
         .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
@@ -126,7 +138,6 @@ export default {
         .getElementById("77f1a006-6668-41ea-a5cd-9215be17056f")
         .classList.remove("header-background-transparent");
     },
-
     scroll() {
       if (window.scrollY > 200) {
         this.removeTransparent();
@@ -134,12 +145,17 @@ export default {
         this.addTransparent();
       }
     },
+    addCard(product) {
+     
+      this.addProduct(product);
+    },
   },
-  data() {
-    return {
-      cards: [1, 2, 3, 4, 5, 6, 7, 8],
-      cards2: [1, 2, 3],
-    };
+  mounted() {
+    this.getProducts();
+  },
+  destroyed() {
+    this.removeTransparent();
+    window.removeEventListener("scroll", this.scroll);
   },
 };
 </script>

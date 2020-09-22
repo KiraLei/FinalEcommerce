@@ -1,14 +1,13 @@
 <template>
   <div class="card-card">
+    <button @click="addCard" class="card-card-add">AGREGAR</button>
     <img class="card-card-background-img" :src="imgSrc" />
 
     <div class="card-background">
       <div class="card-text-box">
-        <h3>
-          {{ title }}
-        </h3>
+        <h3>{{ title }}</h3>
         <span class="card-card-ver-mas" @click="verMas">
-          <img src="@/assets/images/btn_mas.svg" alt=""  /> Ver
+          <img src="@/assets/images/btn_mas.svg" alt /> Ver
           más
         </span>
       </div>
@@ -25,7 +24,6 @@ export default Vue.extend({
 
   methods: {
     verMas() {
-
       this.$router.push({
         path: "/:product",
         query: {
@@ -34,8 +32,10 @@ export default Vue.extend({
           description: this.description,
         },
       });
-      
     },
+    addCard() {
+      this.$emit('addcard')
+    }
   },
 });
 </script>
@@ -50,6 +50,19 @@ export default Vue.extend({
   box-sizing: border-box;
   border-radius: 10px;
   position: relative;
+
+  .card-card-add {
+    position: absolute;
+    background: #f00;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    right: 10px;
+    top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index:9;
+  }
 
   .card-card-background-img {
     width: 100%;

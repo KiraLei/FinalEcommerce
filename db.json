@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nombre": "Desarrollo Front-End",
+      "descripcion": "Desarrolla con nosotros aplicaciones web, utilizando las últimas tendencias de desarrollo Front End, implementando patrones funcionales, reactivos y manejo de estado.",
+      "igv": false,
+      "thumb": "https://pachaqtec.edu.pe/images/front_end.webp",
+      "imagen": "https://pachaqtec.edu.pe/images/front_end_banner.png",
+      "precio": 400,
+      "descuento": 100,
+      "categoria": "Desarrollo"
+    },
+    {
+      "id": 2,
+      "nombre": "Desarrollo Back-End",
+      "descripcion": "Desarrolla con nosotros aplicaciones web, utilizando las últimas tendencias de desarrollo Front End, implementando patrones funcionales, reactivos y manejo de estado.",
+      "igv": false,
+      "thumb": "https://pachaqtec.edu.pe/images/front_end.webp",
+      "imagen": "https://pachaqtec.edu.pe/images/front_end_banner.png",
+      "precio": 300,
+      "descuento": 50,
+      "categoria": "Desarrollo"
+    },
+    {
+      "id": 3,
+      "nombre": "Desarrollo UX",
+      "descripcion": "Desarrolla con nosotros aplicaciones web, utilizando las últimas tendencias de desarrollo Front End, implementando patrones funcionales, reactivos y manejo de estado.",
+      "igv": false,
+      "thumb": "https://pachaqtec.edu.pe/images/front_end.webp",
+      "imagen": "https://pachaqtec.edu.pe/images/front_end_banner.png",
+      "precio": 300,
+      "descuento": 50,
+      "categoria": "Desarrollo"
+    },
+    {
+      "id": 4,
+      "nombre": "Desarrollo UI",
+      "descripcion": "Desarrolla con nosotros aplicaciones web, utilizando las últimas tendencias de desarrollo Front End, implementando patrones funcionales, reactivos y manejo de estado.",
+      "igv": false,
+      "thumb": "https://pachaqtec.edu.pe/images/front_end.webp",
+      "imagen": "https://pachaqtec.edu.pe/images/front_end_banner.png",
+      "precio": 300,
+      "descuento": 50,
+      "categoria": "Desarrollo"
+    }
+  ],
+  "login": {
+    "user": "sda",
+    "password": "123123"
+  }
+}
