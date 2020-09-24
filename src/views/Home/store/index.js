@@ -1,3 +1,5 @@
+import store from "../../../store/";
+
 export default {
   namespaced: true,
   state: {
@@ -41,10 +43,16 @@ export default {
   actions: {
     async getProducts({ commit }) {
       try {
+        console.log("store.state.token", store.state.token);
         const products = await fetch(
           "https://pachaqtec-ecommerce.herokuapp.com/productos/",
           {
-            
+            method: "GET",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+            },
           }
         ).then((response) => response.json());
         commit("SET_ERROR_LOADED", false);

@@ -51,8 +51,8 @@ export default {
     Footer,
     ButtonWhatsapp,
   },
-  mounted() {
-    this.$store.dispatch("accessToken");
+  created() {
+    
   },
 };
 </script>

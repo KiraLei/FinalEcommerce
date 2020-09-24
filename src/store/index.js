@@ -30,7 +30,7 @@ export default new Vuex.Store({
           },
         }
       ).then((response) => response.json());
-
+     
       commit("SET_TOKEN", response.access);
     },
   },
