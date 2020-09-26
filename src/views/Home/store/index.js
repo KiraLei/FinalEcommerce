@@ -1,3 +1,5 @@
+
+
 export default {
   namespaced: true,
   state: {
@@ -42,7 +44,15 @@ export default {
     async getProducts({ commit }) {
       try {
         const products = await fetch(
-          "http://localhost:3000/products"
+          "https://pachaqtec-ecommerce.herokuapp.com/productos/",
+          {
+            method: "GET",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+            },
+          }
         ).then((response) => response.json());
         commit("SET_ERROR_LOADED", false);
         commit("SET_PRODUCTS", products);
