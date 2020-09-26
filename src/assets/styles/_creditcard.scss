@@ -57,6 +57,11 @@
       }
     }
     .nav_button {
+      .on{
+        transition: 0.2s;
+        background: $primary-color;
+        color: #fff;
+      }
       .box-tabs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

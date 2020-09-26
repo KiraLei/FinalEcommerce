@@ -69,14 +69,14 @@
               PAGO / TARJETA DE CREDITO
             </p>
           </li>
-          <li>
+          <!-- <li>
             <p v-on:click="menu_tarjetaTarjetaDebito">
               PAGO / TARJETA DE DEBITO
             </p>
           </li>
           <li>
             <p v-on:click="menu_pagoEfectivo">PAGO / PAGO EFECTIVO</p>
-          </li>
+          </li> -->
           <li>
             <p v-on:click="menu_pagoResumen">PAGO / COMPRA RESUMEN</p>
           </li>
