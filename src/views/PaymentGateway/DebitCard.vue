@@ -10,9 +10,15 @@
         <div class="nav_button">
           <p class="sub-title">Selecciona tu método de pago</p>
           <div class="box-tabs">
-            <button class="btn_animate">Tarjeta de crédito</button>
-            <button class="btn_animate">Tarjeta de débito</button>
-            <button class="btn_animate">Depósito Pago Efectivo</button>
+            <button class="btn_animate" @click="creditCard">
+              Tarjeta de crédito
+            </button>
+            <button class="btn_animate on" @click="tarjetaDebito">
+              Tarjeta de débito
+            </button>
+            <button class="btn_animate" @click="pagoEfectivo">
+              Depósito Pago Efectivo
+            </button>
           </div>
         </div>
 
@@ -68,7 +74,7 @@
             </button>
           </div>
         </div>
-
+        <br /><br />
         <div class="box-button">
           <button class="btn_static center">Finalizar compra</button>
         </div>
@@ -135,6 +141,25 @@ export default {
   name: "DebitCard",
   components: {
     ButtonOnOffComponent,
+  },
+  methods: {
+    creditCard: function() {
+      this.$router.push({
+        path: "/pago/tarjeta-de-credito",
+      });
+    },
+
+    tarjetaDebito: function() {
+      this.$router.push({
+        path: "/pago/tarjeta-de-debito",
+      });
+    },
+
+    pagoEfectivo: function() {
+      this.$router.push({
+        path: "/pago/efectivo",
+      });
+    },
   },
 };
 </script>

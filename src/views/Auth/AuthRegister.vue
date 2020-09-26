@@ -152,7 +152,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.form-group{
+  position: relative;
 .error {
-  border: 1px solid #f00;
+  font-size: 11px;
+  position: absolute;
+  color: rgb(250, 58, 58);
+  // border: 1px solid #f00;
+}
 }
 </style>
