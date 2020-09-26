@@ -2,13 +2,20 @@
   <div class="view-home">
     <div class="view-home-header">
       <div>
-        <img class="view-home-header-background" src="@/assets/images/banner2.png" />
+        <img
+          class="view-home-header-background"
+          src="@/assets/images/banner2.png"
+        />
 
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-8">
-              <p class="view-home-header-texto-1">¡Explota todo tu potencial tecnológico!</p>
-              <p class="view-home-header-texto-2">Con nuestros programas de especialización</p>
+              <p class="view-home-header-texto-1">
+                ¡Explota todo tu potencial tecnológico!
+              </p>
+              <p class="view-home-header-texto-2">
+                Con nuestros programas de especialización
+              </p>
             </div>
           </div>
         </div>
@@ -34,7 +41,9 @@
         </div>
         <div class="row">
           <div class="col">
-            <p class="view-home-body-texto-1 mb-4">Conoce nuestros Programas de Especialización</p>
+            <p class="view-home-body-texto-1 mb-4">
+              Conoce nuestros Programas de Especialización
+            </p>
           </div>
         </div>
 
@@ -45,9 +54,8 @@
                 class="m-2 w-md-100"
                 v-for="product in products"
                 v-bind:key="product.id"
-               
                 v-bind:title="product.nombre"
-                  v-bind:imgSrc="product.imagen"
+                v-bind:imgSrc="product.imagen"
                 v-bind:description="product.description"
                 v-on:addcard="addCard(product)"
               />
@@ -79,7 +87,7 @@
 
     <div class="container">
       <div class="row">
-        <p class="texto-dark-blue-2">Beneficios</p>
+        <p class="texto-dark-blue-2" >Beneficios</p>
       </div>
 
       <div class="row">
@@ -91,8 +99,12 @@
           />
         </div>
       </div>
-      <!-- </div> -->
     </div>
+    <br />
+    <br />
+    <div></div>
+    <br />
+    <br />
   </div>
 </template>
 
@@ -115,7 +127,7 @@ export default {
   data() {
     return {
       cards: [],
-      cards2: [1, 2, 3],
+      cards2: [1, 2],
     };
   },
   watch: {},
@@ -146,7 +158,7 @@ export default {
         this.addTransparent();
       }
     },
-    addCard(product) {     
+    addCard(product) {
       this.addProduct(product);
     },
   },

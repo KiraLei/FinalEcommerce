@@ -5,6 +5,16 @@
         <div>Subtotal</div>
         <span>s/ {{ totalSuma }}</span>
       </div>
+      
+      <div class="amount-pay">
+        <div>Descuento</div>
+        <span>s/ {{ descuento && descuento.descuento?descuento.descuento:'0.00'   }}</span>
+      </div>
+      <hr>
+      <div class="amount-pay">
+        <div>Total</div>
+        <span>s/ {{  totalSuma-(descuento && descuento.descuento ?   descuento.descuento:0) }}</span>
+      </div>
       <div class="input-icon">
         <input
           id="tbCupon"
@@ -14,15 +24,7 @@
         />
         <img v-on:click="bnContinuar"  src="@/assets/images/send1.png" alt />
       </div>
-      <div class="amount-pay">
-        <div>Descuento</div>
-        <span>s/ {{ descuento && descuento.descuento?descuento.descuento:'0.00'   }}</span>
-      </div>
-      <div class="amount-pay">
-        <div>Total</div>
-        <span>s/ {{  totalSuma-(descuento && descuento.descuento ?   descuento.descuento:0) }}</span>
-      </div>
-      <button >Continuar</button>
+      <button class="btn_static">Continuar</button>
     </div>
   </div>
 </template>

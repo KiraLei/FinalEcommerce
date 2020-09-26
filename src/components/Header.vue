@@ -11,14 +11,14 @@
         />
       </div>
 
-      <div class="car-main"  >
-        <div class="total-cart"  >
+      <div class="car-main">
+        <div class="total-cart">
           <img
             v-if="!showMenu"
             src="@/assets/images/car_shoping.svg"
             class="cart"
             alt="car shoping"
-             v-on:click="menu_pagoCheckout"
+            v-on:click="menu_pagoCheckout"
           />
           <span v-on:click="menu_pagoCheckout">{{ totalProducts.length }}</span>
         </div>
@@ -109,12 +109,12 @@ export default Vue.extend({
     }),
   },
   methods: {
-    menuIconShoppingCar: function () {
+    menuIconShoppingCar: function() {
       this.$router.push({
         path: "/auth/register",
       });
     },
-    menuIconClick: function () {
+    menuIconClick: function() {
       let obj = document.getElementById("77f1a006-6668-41ea-a5cd-9215be17056f");
 
       this.existTransparent = obj.classList.contains(
@@ -134,7 +134,7 @@ export default Vue.extend({
         document.body.style.overflow = "hidden";
       }
     },
-    showMenuFalse: function () {
+    showMenuFalse: function() {
       this.showMenu = false;
       document.body.style.overflow = "auto";
       if (this.existTransparent) {
@@ -143,62 +143,62 @@ export default Vue.extend({
           .classList.add("header-background-transparent");
       }
     },
-    menu_login: function () {
+    menu_login: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/login",
       });
     },
 
-    menu_register: function () {
+    menu_register: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/auth/register",
       });
     },
 
-    menu_home: function () {
+    menu_home: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/",
       });
     },
-    menu_detalle: function () {
+    menu_detalle: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/detalle",
       });
     },
 
-    menu_pagoCheckout: function () {
+    menu_pagoCheckout: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/pago/checkout",
       });
     },
 
-    menu_pagoTarjetaCredito: function () {
+    menu_pagoTarjetaCredito: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/pago/tarjeta-de-credito",
       });
     },
 
-    menu_tarjetaTarjetaDebito: function () {
+    menu_tarjetaTarjetaDebito: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/pago/tarjeta-de-debito",
       });
     },
 
-    menu_pagoEfectivo: function () {
+    menu_pagoEfectivo: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/pago/efectivo",
       });
     },
 
-    menu_pagoResumen: function () {
+    menu_pagoResumen: function() {
       this.showMenuFalse();
       this.$router.push({
         path: "/pago/resumen",
@@ -213,6 +213,7 @@ export default Vue.extend({
   display: flex;
   .total-cart {
     position: relative;
+    cursor: pointer;
     span {
       position: absolute;
       right: 35px;
@@ -229,6 +230,7 @@ export default Vue.extend({
   }
   .menuicon {
     padding: 0 15px 7px 0;
+    cursor: pointer;
   }
 }
 </style>

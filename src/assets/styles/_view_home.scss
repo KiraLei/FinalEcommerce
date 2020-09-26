@@ -32,7 +32,7 @@
       padding: 5px 5px;
       border-radius: 5px;
       display: flex;
-      align-items: center ;
+      align-items: center;
       justify-content: center;
     }
 
@@ -42,29 +42,29 @@
       bottom: 80px;
     }
     .view-home-header-texto-2-2 {
-     font-size: 4rem;
-     font-weight: 600;
+      font-size: 4rem;
+      font-weight: 600;
       position: absolute;
       bottom: 80px;
-      color:white;
+      color: white;
     }
   }
   .view-home-body-texto-1 {
     color: $color-dark-blue;
     font-family: $font-family;
     font-size: 1.5rem;
+    font-weight: bold;
   }
 
   .view-home-footer-section-2 {
     @include font-big-2;
   }
 }
-.view-home-product-description{
+.view-home-product-description {
   color: $color-dark-blue;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.4rem;
-
 }
 .view-home-product-texto-1 {
   color: $color-dark-blue;
@@ -135,6 +135,7 @@
       transform: translateY(-50%);
       p {
         @include font-big-2;
+        font-weight: bold;
       }
       span {
         // @include font-big-3;

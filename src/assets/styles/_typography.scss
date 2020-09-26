@@ -33,4 +33,5 @@ $font-family2: "Roboto", sans-serif;
 .texto-dark-blue-2 {
   @include font-big-2();
   color: $color-dark-blue;
+  font-weight: bold;
 }

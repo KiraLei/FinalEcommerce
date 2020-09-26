@@ -2,7 +2,6 @@
   <div class="card-card">
     <button @click="addCard" class="card-card-add">AGREGAR</button>
     <img class="card-card-background-img" :src="imgSrc" />
-
     <div class="card-background">
       <div class="card-text-box">
         <h3>{{ title }}</h3>
@@ -56,7 +55,7 @@ export default Vue.extend({
     position: absolute;
     background: #f00;
     color: #fff;
-    padding: 10px;
+    padding: 7px 10px;
     border: 0;
     right: 10px;
     top: 10px;
@@ -66,8 +65,10 @@ export default Vue.extend({
   }
 
   .card-card-background-img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
   }
 
   .card-background {
@@ -84,6 +85,9 @@ export default Vue.extend({
     .card-text-box {
       align-self: flex-end;
       width: 100%;
+      h3{
+        font-size: 1.5rem;
+      }
       span {
         display: block;
         text-align: right;

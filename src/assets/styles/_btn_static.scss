@@ -1,14 +1,16 @@
 .btn_static {
   width: 100%;
-  background: #5640ff;
+  background: $primary-color;
   color: #fff;
   border: none;
   padding: 15px 0;
- 
- 
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
   &:hover {
     transition: 0.3s;
     background: #402cda;

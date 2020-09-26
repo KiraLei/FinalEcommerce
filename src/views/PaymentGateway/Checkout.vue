@@ -7,7 +7,7 @@
       <h2>Carrito de compras</h2>
     </div>
     <div class="view-checkout checkout">
-      <div>
+      <div class="item-component-checkout">
         <CardList
           v-for="product in totalProducts"
           v-bind:key="product.id"
