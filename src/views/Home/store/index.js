@@ -1,4 +1,4 @@
-import store from "../../../store/";
+
 
 export default {
   namespaced: true,
@@ -43,7 +43,6 @@ export default {
   actions: {
     async getProducts({ commit }) {
       try {
-        console.log("store.state.token", store.state.token);
         const products = await fetch(
           "https://pachaqtec-ecommerce.herokuapp.com/productos/",
           {

@@ -120,7 +120,7 @@ export default {
   watch: {},
   computed: {
     ...mapState({
-      products: (state) => state.HomeStore.products,
+      products: (state) => state.HomeStore.products.results,
     }),
   },
   methods: {
