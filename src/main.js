@@ -6,6 +6,14 @@ import Vuelidate from "vuelidate";
 Vue.use(Vuelidate);
 Vue.config.productionTip = false;
 
+new Vue({
+  router,
+  store,
+  render: (h) => {
+    return h(App);
+  },
+}).$mount("#app");
+/*
 fetch("https://pachaqtec-ecommerce.herokuapp.com/api/token/", {
   method: "POST",
   body: JSON.stringify({
@@ -27,4 +35,4 @@ fetch("https://pachaqtec-ecommerce.herokuapp.com/api/token/", {
         return h(App);
       },
     }).$mount("#app");
-  });
+  });**/

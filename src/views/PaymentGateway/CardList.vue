@@ -10,11 +10,11 @@
               <h3>Dto. 25%</h3>
               <div class="amount-card">
                 <button  @click="remove" >Eliminar</button>
-                <div class="amount-second">s/{{precio}}</div>
+                <div class="amount-second">S/{{precio}}</div>
               </div>
             </div>
           </div>
-          <div class="amount">s/269.00</div>
+          <div class="amount">S/{{precio}}</div>
         </div>
   
 </template>

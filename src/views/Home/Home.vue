@@ -45,8 +45,9 @@
                 class="m-2 w-md-100"
                 v-for="product in products"
                 v-bind:key="product.id"
-                v-bind:imgSrc="product.thumb"
+               
                 v-bind:title="product.nombre"
+                  v-bind:imgSrc="product.imagen"
                 v-bind:description="product.description"
                 v-on:addcard="addCard(product)"
               />

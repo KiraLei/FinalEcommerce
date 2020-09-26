@@ -1,32 +1,67 @@
 <template>
-      <div class="pay-card">
-        <div class="width">
-          <div class="amount-pay">
-            <div>Subtotal</div>
-            <span>s/   {{ totalProduct &&  totalProducts.reduce((a,b)=> Number( a.precio)+Number(b.precio)) }}</span>
-          </div>
-          <div class="input-icon">
-            <input type="text" name id placeholder="Agrega un codigo de descuento" />
-            <img src="@/assets/images/send1.png" alt />
-          </div>
-          <button>Continuar</button>
-        </div>
+  <div class="pay-card">
+    <div class="width">
+      <div class="amount-pay">
+        <div>Subtotal</div>
+        <span>s/ {{ totalSuma }}</span>
       </div>
+      <div class="input-icon">
+        <input
+          id="tbCupon"
+          ref="tbCupon"
+          type="text"
+          placeholder="Agrega un codigo de descuento"
+        />
+        <img v-on:click="bnContinuar"  src="@/assets/images/send1.png" alt />
+      </div>
+      <div class="amount-pay">
+        <div>Descuento</div>
+        <span>s/ {{ descuento && descuento.descuento?descuento.descuento:'0.00'   }}</span>
+      </div>
+      <div class="amount-pay">
+        <div>Total</div>
+        <span>s/ {{  totalSuma-(descuento && descuento.descuento ?   descuento.descuento:0) }}</span>
+      </div>
+      <button >Continuar</button>
+    </div>
+  </div>
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 export default {
   name: "CardSubtotal",
-   computed: {
+  computed: {
     ...mapState({
       totalProducts: (state) => state.HomeStore.totalProducts,
+      totalSuma: (state) => state.HomeStore.totalSuma,
+      totalCupons: (state) => state.HomeStore.totalCupons,
+      descuento:(state) => state.HomeStore.descuento,
     }),
-  
   },
-mounted(){
-  console.log('totalProduct',this.totalProducts)
-}
+  
+  methods: {
+    ...mapActions({
+      setDescuento: "HomeStore/setDescuento",
+    }),
+
+    bnContinuar() {
+      let cupon = this.$refs["tbCupon"].value.trim();
+      
+      let obj = this.totalCupons.filter((obj) => obj.codigo === cupon)[0];
+
+    
+      if (obj) {
+        this.setDescuento(obj);
+ 
+      }
+      else{
+        this.setDescuento({});
+      }
+
+      //  this.setPrecioCobro(product);
+    },
+  },
 };
 </script>
 

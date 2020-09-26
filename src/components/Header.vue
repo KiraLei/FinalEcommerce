@@ -11,19 +11,16 @@
         />
       </div>
 
-      <div class="car-main"  
-     
-      v-on:click="menu_pagoCheckout"
-      >
-        <div class="total-cart">
+      <div class="car-main"  >
+        <div class="total-cart"  >
           <img
             v-if="!showMenu"
             src="@/assets/images/car_shoping.svg"
             class="cart"
             alt="car shoping"
-           
+             v-on:click="menu_pagoCheckout"
           />
-          <span>{{ totalProducts.length }}</span>
+          <span v-on:click="menu_pagoCheckout">{{ totalProducts.length }}</span>
         </div>
 
         <img
@@ -112,7 +109,11 @@ export default Vue.extend({
     }),
   },
   methods: {
-   
+    menuIconShoppingCar: function () {
+      this.$router.push({
+        path: "/auth/register",
+      });
+    },
     menuIconClick: function () {
       let obj = document.getElementById("77f1a006-6668-41ea-a5cd-9215be17056f");
 

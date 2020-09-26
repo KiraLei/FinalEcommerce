@@ -40,7 +40,7 @@ export default {
     }),
   },
   mounted() {
-    console.log("totalProducts", this.totalProducts);
+   
   },
   methods: {
     ...mapActions({
