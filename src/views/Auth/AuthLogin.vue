@@ -49,7 +49,7 @@
 
       <div class="form-group">
         <div class="col-lg-12">
-          <button type="submit" class="btn btn-sm boton-form">Ingresar</button>
+          <button type="submit" class="btn btn-sm boton-form btn_static">Ingresar</button>
         </div>
       </div>
 

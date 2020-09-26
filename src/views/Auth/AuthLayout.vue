@@ -6,11 +6,11 @@
       <div class="row">
         <!--Contenedor de imagen -->
         <div class="d-none d-xl-block banner col-md-12 col-lg-12 col-xl-8">
-          <div class="top">
+          <!-- <div class="top">
             <div class="logo-pacha">
               <img src="@/assets/images/logo-pacha.svg" alt />
             </div>
-          </div>
+          </div> -->
           <div class="middle">
             <div class="grupo-texto">
               <h1>
