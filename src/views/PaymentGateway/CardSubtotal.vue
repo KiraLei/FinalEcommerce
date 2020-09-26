@@ -11,11 +11,11 @@
         <span
           >s/
           {{
-            descuento && descuento.descuento ? descuento.descuento : "0.00"
+            descuento && descuento.descuento   ? descuento.descuento : "0.00"
           }}</span
         >
       </div>
-      <hr />
+      <hr/>
       <div class="amount-pay">
         <div>Total</div>
         <span
