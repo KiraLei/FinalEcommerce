@@ -1,5 +1,4 @@
-
-
+import router from "../../../router";
 export default {
   namespaced: true,
   state: {
@@ -27,23 +26,22 @@ export default {
       const found = state.totalProducts.find(
         (currentProduct) => currentProduct.id === product.id
       );
-   /*   const index = state.totalProducts
+      /*   const index = state.totalProducts
         .map((currentProduct) => currentProduct.id)
         .indexOf(product.id);
 */
       //console.log("found", found);
       //console.log("index", index);
 
-
       if (state.totalProducts && state.totalProducts.length === 0) {
         state.totalSuma = 0;
-        state.descuento=undefined;
+        state.descuento = undefined;
       }
       if (!found) {
         product.total = 1;
         state.totalProducts.push(product);
         state.totalSuma += Number(product.precio);
-        state.setPrecioCobro=0;
+        state.setPrecioCobro = 0;
       } else {
         // console.log(" existe!!");
         // state.totalProducts[index].total = state.totalProducts[index].total + 1;
@@ -55,10 +53,10 @@ export default {
         (currentProduct) => currentProduct.id !== product.id
       );
       state.totalSuma -= Number(product.precio);
-      if ( state.totalProducts.length===0)
-      {
-      state.descuento=undefined;
-    }},
+      if (state.totalProducts.length === 0) {
+        state.descuento = undefined;
+      }
+    },
   },
   actions: {
     async getProducts({ commit }) {
@@ -69,8 +67,9 @@ export default {
             method: "GET",
             headers: {
               Accept: "application/json",
-              "Content-Type": "application/json"/*,
-              Authorization: `Bearer ${sessionStorage.getItem("token")}`,*/
+              "Content-Type":
+                "application/json" /*,
+              Authorization: `Bearer ${sessionStorage.getItem("token")}`,*/,
             },
           }
         ).then((response) => response.json());
@@ -81,12 +80,13 @@ export default {
             method: "GET",
             headers: {
               Accept: "application/json",
-              "Content-Type": "application/json"/*,
-              Authorization: `Bearer ${sessionStorage.getItem("token")}`,*/
+              "Content-Type":
+                "application/json" /*,
+              Authorization: `Bearer ${sessionStorage.getItem("token")}`,*/,
             },
           }
         ).then((response) => response.json());
- 
+
         commit("SET_CUPONS", cupons.results);
 
         commit("SET_ERROR_LOADED", false);
@@ -96,13 +96,33 @@ export default {
       }
     },
     setDescuento({ commit }, descuento) {
-      commit('SET_DESCUENTO', descuento);
+      commit("SET_DESCUENTO", descuento);
     },
     addProduct({ commit }, product) {
       commit("ADD_PRODUCT", product);
     },
     removeProduct({ commit }, product) {
       commit("REMOVE_PRODUCT", product);
+    },
+    /* eslint-disable */
+    async paymentCulqui({ commit }, formData) {
+      var myHeaders = new Headers();
+      myHeaders.append(
+        "Authorization",
+        "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAxMDI2MDMxLCJqdGkiOiJlMzNhZDA0OWM3Mjg0MWJhOWUwNWI1YjQyNDYyODgyYyIsInVzZXJfaWQiOjF9.QP7_8wdoAhLd6J08ydvO43U7tMrvpj5weQAnnYVP9JY"
+      );
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: formData,
+        redirect: "follow",
+      };
+      fetch("https://925c87f44515.ngrok.io/charges/", requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+          router.push("/pago/resumen");
+        })
+        .catch((error) => alert("No se pudo realizar la compra"));
     },
   },
 };
