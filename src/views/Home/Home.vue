@@ -145,8 +145,7 @@ export default {
         this.addTransparent();
       }
     },
-    addCard(product) {
-     
+    addCard(product) {     
       this.addProduct(product);
     },
   },

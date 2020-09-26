@@ -49,8 +49,8 @@ export default {
             method: "GET",
             headers: {
               Accept: "application/json",
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+              "Content-Type": "application/json"/*,
+              Authorization: `Bearer ${sessionStorage.getItem("token")}`,*/
             },
           }
         ).then((response) => response.json());
