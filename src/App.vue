@@ -32,7 +32,7 @@
       </li>
     </ul>
     -->
-    <div style="margin-top:60px; flex-grow:1; "    id='principalContainer'>
+    <div style="margin-top: 60px; flex-grow: 1" id="principalContainer">
       <router-view></router-view>
     </div>
 
@@ -50,6 +50,9 @@ export default {
     Header,
     Footer,
     ButtonWhatsapp,
+  },
+  created() {
+    
   },
 };
 </script>

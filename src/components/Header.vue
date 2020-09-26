@@ -11,15 +11,16 @@
         />
       </div>
 
-      <div class="car-main">
-        <div class="total-cart">
+      <div class="car-main"  >
+        <div class="total-cart"  >
           <img
             v-if="!showMenu"
             src="@/assets/images/car_shoping.svg"
             class="cart"
             alt="car shoping"
+             v-on:click="menu_pagoCheckout"
           />
-          <span>{{totalProducts.length}}</span>
+          <span v-on:click="menu_pagoCheckout">{{ totalProducts.length }}</span>
         </div>
 
         <img
@@ -30,10 +31,21 @@
           alt="menu nav"
         />
 
-        <p class="menu-principal-close" v-if="showMenu" v-on:click="showMenuFalse">X</p>
+        <p
+          class="menu-principal-close"
+          v-if="showMenu"
+          v-on:click="showMenuFalse"
+        >
+          X
+        </p>
       </div>
     </div>
-    <div v-if="showMenu" id="divMenuPrincipal" ref="divMenuPrincipal" class="menu-principal">
+    <div
+      v-if="showMenu"
+      id="divMenuPrincipal"
+      ref="divMenuPrincipal"
+      class="menu-principal"
+    >
       <div class="menu-principal-body">
         <ul>
           <li>
@@ -53,10 +65,14 @@
             <p v-on:click="menu_pagoCheckout">PAGO / CHECKOUT</p>
           </li>
           <li>
-            <p v-on:click="menu_pagoTarjetaCredito">PAGO / TARJETA DE CREDITO</p>
+            <p v-on:click="menu_pagoTarjetaCredito">
+              PAGO / TARJETA DE CREDITO
+            </p>
           </li>
           <li>
-            <p v-on:click="menu_tarjetaTarjetaDebito">PAGO / TARJETA DE DEBITO</p>
+            <p v-on:click="menu_tarjetaTarjetaDebito">
+              PAGO / TARJETA DE DEBITO
+            </p>
           </li>
           <li>
             <p v-on:click="menu_pagoEfectivo">PAGO / PAGO EFECTIVO</p>
@@ -93,6 +109,11 @@ export default Vue.extend({
     }),
   },
   methods: {
+    menuIconShoppingCar: function () {
+      this.$router.push({
+        path: "/auth/register",
+      });
+    },
     menuIconClick: function () {
       let obj = document.getElementById("77f1a006-6668-41ea-a5cd-9215be17056f");
 
@@ -205,10 +226,9 @@ export default Vue.extend({
       height: 20px;
       font-size: 11px;
     }
-    
   }
-  .menuicon{
-      padding:0 15px 7px 0;
-    }
+  .menuicon {
+    padding: 0 15px 7px 0;
+  }
 }
 </style>

@@ -3,18 +3,18 @@
         <div class="firt-section">
           <div class="checkout-card">
             <figure>
-              <img src="@/assets/images/shippingcar1.png" />
+              <img  class="cardList-img" :src="imagen" />
             </figure>
             <div class="checkout-align">
-              <h2>Gestión de Envases, Empaques y Embalajes</h2>
+              <h2>{{nombre}}</h2>
               <h3>Dto. 25%</h3>
               <div class="amount-card">
-                <a href>Eliminar</a>
-                <div class="amount-second">s/269.00</div>
+                <button  @click="remove" >Eliminar</button>
+                <div class="amount-second">S/{{precio}}</div>
               </div>
             </div>
           </div>
-          <div class="amount">s/269.00</div>
+          <div class="amount">S/{{precio}}</div>
         </div>
   
 </template>
@@ -22,7 +22,22 @@
 <script>
 export default {
   name: "CardList",
+  props:["nombre","precio","imagen","id"],
+  methods:{
+   remove() {
+      this.$emit("remove");
+    },
+
+  }
 };
 </script>
 
-<style></style>
+<style>
+
+.cardList-img{
+width: 200px;
+height: 200px;
+
+}
+
+</style>
