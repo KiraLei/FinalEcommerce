@@ -37,6 +37,7 @@
     </div>
 
     <ButtonWhatsapp></ButtonWhatsapp>
+    <ButtonChat></ButtonChat>
     <Footer />
   </div>
 </template>
@@ -44,12 +45,14 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import ButtonWhatsapp from "@/ui/ButtonWhatsapp.vue";
+import ButtonChat from "@/ui/ButtonChat.vue";
 export default {
   name: "App",
   components: {
     Header,
     Footer,
     ButtonWhatsapp,
+    ButtonChat,
   },
   created() {
     
