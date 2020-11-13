@@ -35,12 +35,14 @@ import Vue from "vue";
 export default Vue.extend({
   name: "ButtonChat",
 });
-document.getElementById("myBtn").onclick = function () {
-  myFunction();
-};
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+
+// document.getElementById("myBtn").onclick = function () {
+//   myFunction();
+// };
+// function myFunction() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+
 </script>
 
 <style lang="scss">
@@ -121,4 +123,5 @@ function myFunction() {
     }
   }
 }
+
 </style>
