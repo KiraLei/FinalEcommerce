@@ -1,4 +1,4 @@
-# proyecto_final
+# E-COMERCE
 
 ## Project setup
 ```
